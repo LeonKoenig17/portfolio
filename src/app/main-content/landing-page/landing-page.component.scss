@@ -1,0 +1,15 @@
+@import "./../../../styles.scss";
+
+section {
+    border: 1px solid red;
+    @include dFlex();
+    >div *{
+        white-space: nowrap;
+        p {
+            font-size: 54px;
+        }
+        h1 {
+            font-size: 82px;
+        }
+    }
+}

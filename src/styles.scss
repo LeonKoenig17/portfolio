@@ -18,10 +18,17 @@ $primary-font-color: #02F4BF;
 $secondary-font-color: #E15544;
 
 body {
+    @include dFlex($ai: unset);
     height: 100vh;
     width: 100%;
     margin: 0;
     background: linear-gradient(170deg, #0B042D, #1F0B80, #0B042F, #241085);
+}
+
+app-root {
+    width: 100%;
+    max-width: calc(1440px - 120px);
+    margin: 0 60px;
 }
 
 body * {
@@ -31,4 +38,8 @@ body * {
 
 button:hover {
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
 }

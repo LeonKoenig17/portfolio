@@ -1,0 +1,30 @@
+@import "./../../../../styles.scss";
+
+section {
+    @include dFlex($jc: space-between);
+    height: 90px;
+    width: 100%;
+    >div {
+        @include dFlex();
+        gap: 48px;
+        >nav {
+            @include dFlex();
+            gap: 32px;
+            >a {
+                white-space: nowrap;
+            }
+        }
+    }
+    >div {
+        white-space: nowrap;
+    }
+}
+
+section * {
+    color: $secondary-font-color;
+}
+
+.headerLogo {
+    font-family: Handjet;
+    font-size: 48px;
+}
