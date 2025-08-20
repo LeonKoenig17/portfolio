@@ -1,15 +1,32 @@
+@font-face {
+    font-family: Roboto Mono;
+    src: url("./assets/fonts/RobotoMono-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Handjet;
+    src: url("./assets/fonts/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf");
+}
+
 @mixin dFlex($jc: center, $ai: center) {
     display: flex;
     justify-content: $jc;
     align-items: $ai;
 }
 
+$primary-font-color: #02F4BF;
+$secondary-font-color: #E15544;
+
 body {
+    height: 100vh;
+    width: 100%;
     margin: 0;
+    background: linear-gradient(170deg, #0B042D, #1F0B80, #0B042F, #241085);
 }
 
 body * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Roboto Mono;
+    color: $primary-font-color;
 }
 
 button:hover {
