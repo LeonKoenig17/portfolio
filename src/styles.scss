@@ -14,13 +14,18 @@
     align-items: $ai;
 }
 
+@mixin contentLimit($height, $padY: 0px, $padX: 60px) {
+    height: $height;
+    width: 100%;
+    max-width: calc(1440px - $padX * 2);
+    padding: $padY $padX;
+}
+
 $primary-font-color: #02F4BF;
 $secondary-font-color: #E15544;
 
 body {
-    @include dFlex($ai: unset);
     min-height: 100vh;
-    // width: 100%;
     margin: 0;
     background: linear-gradient(170deg, #0B042D, #1F0B80, #0B042F, #241085);
 }

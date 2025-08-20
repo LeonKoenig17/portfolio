@@ -1,26 +1,26 @@
 @import "./../../../../styles.scss";
 
 section {
-    @include dFlex($jc: space-between);
-    height: 90px;
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 140px;
-    >div {
-        @include dFlex();
-        gap: 48px;
-        >nav {
+    @include dFlex();
+    #content {
+        @include dFlex($jc: space-between);
+        @include contentLimit(90px, $padX: 140px);
+        >div {
             @include dFlex();
-            gap: 32px;
-            >a {
-                white-space: nowrap;
-                font-size: 22px;
+            gap: 48px;
+            >nav {
+                @include dFlex();
+                gap: 32px;
+                >a {
+                    white-space: nowrap;
+                    font-size: 22px;
+                }
             }
         }
-    }
-    >div {
-        white-space: nowrap;
-        font-size: 22px;
+        >div {
+            white-space: nowrap;
+            font-size: 22px;
+        }
     }
 }
 
