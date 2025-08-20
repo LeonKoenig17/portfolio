@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@mixin dFlex($jc: center, $ai: center) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+body {
+    margin: 0;
+}
+
+body * {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+}
