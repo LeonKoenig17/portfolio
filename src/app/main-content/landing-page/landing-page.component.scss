@@ -1,15 +1,32 @@
 @import "./../../../styles.scss";
 
 section {
-    border: 1px solid red;
-    @include dFlex();
-    >div *{
+    border: 1px dotted rgba(255, 0, 0, 0.437);
+    @include dFlex($jc: space-between);
+    height: 600px;
+    >div {
+        @include dFlex($jc: flex-end, $ai: flex-start);
+        height: 100%;
+        flex-direction: column;
         white-space: nowrap;
-        p {
+        >p {
             font-size: 54px;
+            margin: 0;
         }
-        h1 {
+        >h1 {
             font-size: 82px;
+            margin: 0;
         }
+    }
+    >img {
+        position: absolute;
+    }
+    >a {
+        position: absolute;
+        font-size: 18px;
+        color: $secondary-font-color;
+        transform: rotate(-90deg) translate(50%);
+        border: 1px solid $primary-font-color;
+        padding: 15px 30px;
     }
 }
