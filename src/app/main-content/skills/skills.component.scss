@@ -1,0 +1,12 @@
+@import "./../../../styles.scss";
+
+section {
+    @include dFlex();
+    padding-top: 60px;
+    #content {
+        @include dFlex();
+        @include contentLimit();
+        flex-direction: column;
+        text-align: left;
+    }
+}
