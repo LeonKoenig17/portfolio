@@ -1,1 +1,11 @@
-<p>projects works!</p>
+<section>
+    <h2 class="section-heading">My Projects</h2>
+    <div>
+        @for (project of projects; track $index) {
+            <app-single-project 
+                [data]="project"
+                [isReversed]="$index == 1">
+            </app-single-project>
+        }
+    </div>
+</section>

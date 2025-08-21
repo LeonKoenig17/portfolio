@@ -1,0 +1,41 @@
+@import "./../../../../styles.scss";
+
+section {
+    @include dFlex($ai: flex-start);
+    @include contentLimit();
+    gap: 60px;
+    .text-div {
+        > * {
+            font-size: 18px;
+        }
+        h2 {
+            font-size: 48px;
+            margin-top: 0;
+        }
+        p {
+            margin: 40px 0;
+        }
+        button {
+            padding: 15px 30px;
+            border: none;
+        }
+        .git-button {
+            color: $secondary-font-color;
+            background: none;
+            box-shadow: inset 0 0 0 1px $primary-font-color;
+        }
+        .test-button {
+            color: black;
+            background-color: $primary-font-color;
+            margin: 0 30px;
+        }
+    }
+}
+
+.reversed {
+    flex-direction: row-reverse;
+    text-align: right;
+    .text-div .test-button {
+        margin-right: 0;
+    }
+}
