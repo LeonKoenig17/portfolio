@@ -2,5 +2,8 @@
 
 * {
     @include dFlex();
-    padding-top: 60px;
+    padding-top: 120px;
+    &:first-child {
+        padding-top: 0;
+    }
 }

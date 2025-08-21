@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-single-skill',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './single-skill.component.scss'
 })
 export class SingleSkillComponent {
-  
+  @Input() skill = {img: "", text: ""};
 }

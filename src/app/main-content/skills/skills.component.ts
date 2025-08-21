@@ -19,7 +19,7 @@ export class SkillsComponent {
     {img: "./assets/images/firebase.png", text: "Firebase"},
     {img: "./assets/images/git.png", text: "Git"},
     {img: "./assets/images/scrum.png", text: "Scrum"},
-    {img: "./assets/images/material-design.png", text: "Material design"},
-    {img: "./assets/images/challenge-me.png", text: "Challenge me"}
+    {img: "./assets/images/material-design.png", text: "Material\ndesign"},
+    {img: "./assets/images/challenge-me.png", text: "Challenge\nme"}
   ]
 }

@@ -1,0 +1,10 @@
+@import "./../../../../styles.scss";
+
+section {
+    @include dFlex();
+    flex-direction: column;
+    >p {
+        white-space: pre-line;
+        text-align: center;
+    }
+}

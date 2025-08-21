@@ -1,8 +1,18 @@
 @import "./../../../styles.scss";
 
 section {
-    @include dFlex();
+    @include dFlex($ai: flex-start);
     @include contentLimit();
     flex-direction: column;
-    text-align: left;
+    gap: 80px;
+    >div {
+        @include dFlex($jc: flex-start, $ai: flex-start);
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 120px 0;
+        >app-single-skill {
+            @include dFlex($jc: flex-start);
+            width: 16%;
+        }
+    }
 }
