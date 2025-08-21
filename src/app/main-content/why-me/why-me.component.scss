@@ -4,23 +4,28 @@ section {
     @include dFlex();
     padding-top: 60px;
     #content {
-        border: 1px dotted rgba(255, 0, 0, 0.449);
         @include dFlex();
-        @include contentLimit(500px);
-        >img {
-            object-fit: cover;
-            width: 450px;
-            height: 100%;
+        @include contentLimit();
+        #why-me-image {
+            // height: 400px;
+            >img {
+                // object-fit: cover;
+                // height: 100%;
+                // width: auto;
+            }
         }
-        >div {
+        #why-me-text {
+            @include dFlex($ai: flex-end);
+            flex-direction: column;
             text-align: right;
+            gap: 20px;
             h2 {
                 color: $secondary-font-color;
                 font-size: 54px;
                 margin: 0;
             }
             p {
-
+                margin: 0;
             }
             >button {
                 color: black;
@@ -36,6 +41,14 @@ section {
     flex-direction: column;
     >div {
         @include dFlex();
+        position: relative;
+        width: 560px;
+        height: 60px;
+        > * {
+            position: absolute;
+            white-space: nowrap;
+            gap: 10px;
+        }
         span {
             color: $secondary-font-color;
             font-size: 48px;
