@@ -1,38 +1,35 @@
 @import "./../../../styles.scss";
 
 section {
-    @include dFlex();
-    #content {
-        @include dFlex($jc: space-between);
-        @include contentLimit(600px);
-        position: relative;
-        >div {
-            @include dFlex($jc: flex-end, $ai: flex-start);
-            height: 100%;
-            flex-direction: column;
-            white-space: nowrap;
-            >p {
-                font-size: 54px;
-                margin: 0;
-            }
-            >h1 {
-                font-size: 82px;
-                margin: 0;
-            }
+    @include dFlex($jc: space-between);
+    @include contentLimit(600px);
+    position: relative;
+    >div {
+        @include dFlex($jc: flex-end, $ai: flex-start);
+        height: 100%;
+        flex-direction: column;
+        white-space: nowrap;
+        >p {
+            font-size: 54px;
+            margin: 0;
         }
-        >img {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
+        >h1 {
+            font-size: 82px;
+            margin: 0;
         }
-        >a {
-            position: absolute;
-            left: 0;
-            font-size: 18px;
-            color: $secondary-font-color;
-            transform: rotate(-90deg) translate(50%);
-            border: 1px solid $primary-font-color;
-            padding: 15px 30px;
-        }
+    }
+    >img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    >a {
+        position: absolute;
+        left: 0;
+        font-size: 18px;
+        color: $secondary-font-color;
+        transform: rotate(-90deg) translate(50%);
+        border: 1px solid $primary-font-color;
+        padding: 15px 30px;
     }
 }

@@ -1,0 +1,6 @@
+@import "./../../styles.scss";
+
+* {
+    @include dFlex();
+    padding-top: 60px;
+}

@@ -2,31 +2,27 @@
 
 section {
     @include dFlex();
-    padding-top: 60px;
-    #content {
-        @include dFlex();
-        @include contentLimit();
-        #why-me-image {
-            // height: 400px;
-            >img {
-                // object-fit: cover;
-                // height: 100%;
-                // width: auto;
-            }
+    @include contentLimit();
+    #why-me-image {
+        // height: 400px;
+        >img {
+            // object-fit: cover;
+            // height: 100%;
+            // width: auto;
         }
-        #why-me-text {
-            @include dFlex($ai: flex-end);
-            flex-direction: column;
-            text-align: right;
-            gap: 20px;
-            p {
-                margin: 0;
-            }
-            >button {
-                color: black;
-                background-color: $primary-font-color;
-                padding: 15px 30px;
-            }
+    }
+    #why-me-text {
+        @include dFlex($ai: flex-end);
+        flex-direction: column;
+        text-align: right;
+        gap: 20px;
+        p {
+            margin: 0;
+        }
+        >button {
+            color: black;
+            background-color: $primary-font-color;
+            padding: 15px 30px;
         }
     }
 }
