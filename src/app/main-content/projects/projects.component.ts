@@ -30,7 +30,7 @@ export class ProjectsComponent {
       title: "Los Virales",
       skills: "JavaScript | HTML | CSS",
       text: `
-        A little post-apocalyptic game that uses the principles of object-orientation.`
+        A little post-apocalyptic game that utilizes the principles of object-orientation.`
     }
   ]
 }
