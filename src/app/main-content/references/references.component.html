@@ -1,9 +1,11 @@
 <section>
-    <p></p>
+    <p>Need a teamplayer? Here what my colleagues said about me</p>
     <div>
-        <img src="" alt="">
-        <div>
-            <app-comment></app-comment>
+        <img src="./assets/images/long-arrow-right.png" alt="arrow-right"> <!--37° rotation-->
+        <div class="comments-container">
+            @for (comment of comments; track $index) {
+                <app-comment [comment]="comment"></app-comment>
+            }
         </div>
     </div>
 </section>

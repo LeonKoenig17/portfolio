@@ -1,0 +1,11 @@
+@import "./../../../../styles.scss";
+
+section {
+    h2 {
+        color: $secondary-font-color;
+        font-size: 24px;
+    }
+    span, p {
+        font-size: 18px;
+    }
+}

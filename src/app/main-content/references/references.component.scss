@@ -1,0 +1,21 @@
+@import "./../../../styles.scss";
+
+section {
+    @include contentLimit();
+    >p {
+        font-size: 24px;
+        color: $secondary-font-color;
+    }
+    >div {
+        @include dFlex($ai: flex-start);
+        >img {
+            padding: 0 30px;
+        }
+    }
+}
+
+.comments-container {
+    @include dFlex();
+    // @include contentLimit();
+    gap: 50px;
+}
