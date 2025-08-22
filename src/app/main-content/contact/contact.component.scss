@@ -20,6 +20,9 @@ section {
         }
         p {
             margin: 0;
+            span {
+                color: $secondary-font-color;
+            }
         }
     }
     .send {

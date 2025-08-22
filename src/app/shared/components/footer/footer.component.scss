@@ -1,0 +1,47 @@
+@import "./../../../../styles.scss";
+
+section {
+    @include dFlex();
+    padding-top: 80px;
+    #content {
+        @include contentLimit($height: 200px);
+        * {
+            color: $secondary-font-color;
+        }
+    }
+}
+
+.info {
+    @include dFlex($jc: space-between, $ai: flex-end);
+    p {
+        margin: 0;
+    }
+    >p {
+        font-size: 23px;
+    }
+    >div:first-child {
+        @include dFlex();
+        flex-direction: column;
+        >p {
+            font-size: 12px;
+        }
+    }
+    .links > a {
+        margin-left: 20px;
+    }
+}
+
+.legal-notice {
+    @include dFlex();
+    margin-top: 30px;
+    text-align: center;
+    gap: 40px;
+    a {
+        font-size: 14px;
+    }
+}
+
+.footer-logo {
+    font-family: Handjet;
+    font-size: 54px;
+}
