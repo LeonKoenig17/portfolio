@@ -2,6 +2,10 @@
 
 section {
     @include dFlex();
+    background: linear-gradient(#0B042D 50%, #0B042D33);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     #content {
         @include dFlex($jc: space-between);
         @include contentLimit(90px, $padX: 140px);
@@ -14,6 +18,9 @@ section {
                 >a {
                     white-space: nowrap;
                     font-size: 22px;
+                    &:hover {
+                        color: $primary-font-color;
+                    }
                 }
             }
         }
@@ -28,7 +35,7 @@ section * {
     color: $secondary-font-color;
 }
 
-.headerLogo {
+.header-logo {
     font-family: Handjet;
     font-size: 48px;
 }
