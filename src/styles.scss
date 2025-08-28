@@ -42,6 +42,9 @@ button:hover {
 
 a {
     text-decoration: none;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .section-heading {
