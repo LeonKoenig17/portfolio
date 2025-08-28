@@ -31,5 +31,17 @@ section {
         transform: rotate(-90deg) translate(50%);
         border: 1px solid $primary-font-color;
         padding: 15px 30px;
+        transition: color 0.5s ease;
+        &:hover {
+            color: $primary-font-color;
+        }
+    }
+}
+
+.arrow-down {
+    &:hover {
+        cursor: pointer;
+        border: 1px solid $primary-font-color;
+        padding: 10px;
     }
 }

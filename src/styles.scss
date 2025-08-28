@@ -29,11 +29,10 @@ body {
     min-height: 100vh;
     margin: 0;
     background: linear-gradient(170deg, #0B042D, #1F0B80, #0B042F, #241085);
-}
-
-body * {
-    font-family: Roboto Mono;
-    color: $primary-font-color;
+    * {
+        font-family: Roboto Mono;
+        color: $primary-font-color;
+    }
 }
 
 button:hover {
@@ -51,4 +50,9 @@ a {
     font-size: 54px;
     color: $secondary-font-color;
     margin: 0;
+}
+
+p, span, h1, h2, h3 {
+    cursor: default;
+    user-select: none;
 }

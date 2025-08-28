@@ -1,9 +1,11 @@
 @import "./../../styles.scss";
 
-* {
-    @include dFlex();
+section {
     padding-top: 120px;
     &:first-child {
         padding-top: 0;
+    }
+    >* {
+        @include dFlex();
     }
 }

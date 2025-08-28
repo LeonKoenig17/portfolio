@@ -23,6 +23,9 @@ section {
             color: black;
             background-color: $primary-font-color;
             padding: 15px 30px;
+            &:hover {
+                color: $secondary-font-color;
+            }
         }
     }
 }

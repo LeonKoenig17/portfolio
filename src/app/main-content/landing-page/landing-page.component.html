@@ -1,11 +1,14 @@
 <section>
-    <img src="./assets/images/arrow-down.png" alt="arrow">
-    <a href="">Contact me</a>
+    <img class="arrow-down" src="./assets/images/arrow-down.png" alt="arrow"
+        onmouseover="this.src='./assets/images/arrow-down-primColor.png'"
+        onmouseout="this.src='./assets/images/arrow-down.png'"
+        (click)="scrollTo('why-me')">
+    <a (click)="scrollTo('contact')">Contact me</a>
     <div>
         <p>FRONTEND DEVELOPER</p>
         <h1>Leon König</h1>
     </div>
     <div>
-        <img src="./assets/images/cover-image.png" alt="">
+        <img src="./assets/images/cover-image.png" alt="cover image">
     </div>
 </section>
