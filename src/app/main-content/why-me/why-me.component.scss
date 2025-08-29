@@ -23,6 +23,7 @@ section {
             color: black;
             background-color: $primary-font-color;
             padding: 15px 30px;
+            border: none;
             &:hover {
                 color: $secondary-font-color;
             }

@@ -31,7 +31,7 @@ section {
         transform: rotate(-90deg) translate(50%);
         border: 1px solid $primary-font-color;
         padding: 15px 30px;
-        transition: color 0.5s ease;
+        transition: color 0.3s ease;
         &:hover {
             color: $primary-font-color;
         }
