@@ -1,12 +1,10 @@
 <section [ngClass]="{ 'reversed': isReversed}">
-    <div class="image-div">
-        <img src={{data.image}} alt="project-image">
-    </div>
+    <img src={{data.image}} alt="project-image">
     <div class="text-div">
         <h2>{{data.title}}</h2>
         <span>{{data.skills}}</span>
         <p>{{data.text}}</p>
-        <button class="git-button">Github</button>
-        <button class="test-button">Live Test</button>
+        <a class="git-button" href={{data.gitLink}}>Github</a>
+        <a class="test-button" href={{data.liveLink}}>Live Test</a>
     </div>
 </section>

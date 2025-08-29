@@ -7,6 +7,10 @@ import { Component, Input } from '@angular/core';
   templateUrl: './single-skill.component.html',
   styleUrl: './single-skill.component.scss'
 })
+
 export class SingleSkillComponent {
-  @Input() skill = {img: "", text: ""};
+  @Input() skill: { img: string; text: string; message?: string } = {
+    img: "",
+    text: ""
+  }
 }

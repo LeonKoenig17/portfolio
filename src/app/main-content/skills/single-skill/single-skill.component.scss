@@ -7,4 +7,16 @@ section {
         white-space: pre-line;
         text-align: center;
     }
+    &:hover + span {
+        opacity: 1;
+    }
+}
+span {
+    position: absolute;
+    width: 200px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+    transition: opacity 0.2s ease;
+    opacity: 0;
 }

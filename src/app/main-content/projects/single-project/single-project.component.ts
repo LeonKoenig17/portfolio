@@ -13,7 +13,9 @@ export class SingleProjectComponent {
     image: "./assets/images/join.png",
     title: "Join",
     skills: "Angular | TypeScript | HTML | CSS | Firebase",
-    text: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. "
+    text: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+    gitLink: "",
+    liveLink: ""
   };
 
   @Input() isReversed = false;
