@@ -12,17 +12,15 @@ section {
             padding: 0 30px;
         }
     }
-    .policy-agreement {
-        @include dFlex($jc: flex-start);
-        margin: 40px 0 0 0;
-        img {
-            padding-right: 20px;
+    .info {
+        @include dFlex($jc: space-between);
+        >p {
+            padding-right: 40px;
+            width: 50%;
         }
-        p {
-            margin: 0;
-            span {
-                color: $secondary-font-color;
-            }
+        >div {
+            @include dFlex($jc: space-between);
+            width: 50%;
         }
     }
     .send {
@@ -38,37 +36,20 @@ section {
 }
 
 .input {
-    @include dFlex($ai: flex-start);
-    >div {
-        @include dFlex($ai: flex-start);
-        flex-direction: column;
-    }
-    .left, .right {
+    @include dFlex();
+    height: 170px;
+    margin-top: 20px;
+    > * {
         width: 50%;
     }
-    .left {
+    >div {
+        gap: 40px;
         padding-right: 40px;
-        p {
-            margin: 0;
-            height: 100px;
-        }
-        > div {
-            display: grid;
-            gap: 40px;
-            width: 100%;
-            height: 165px;
-        }
+        display: grid;
     }
-    .right {
-        @include dFlex($jc: flex-start);
-        > div {
-            @include dFlex($jc: space-between, $ai: flex-start);
-            width: 100%;
-            height: 100px;
-        }
-        > textarea {
-            height: calc(165px - 20px * 2);
-        }
+    >textarea {
+        height: calc(100% - 18px * 2);
+        resize: none;
     }
 }
 
@@ -95,5 +76,19 @@ input, textarea {
     &::placeholder {
         color: $primary-font-color;
         opacity: 60%;
+    }
+}
+
+.policy-agreement {
+    @include dFlex($jc: flex-start);
+    margin: 40px 0 0 0;
+    img {
+        padding-right: 20px;
+    }
+    p {
+        margin: 0;
+        span {
+            color: $secondary-font-color;
+        }
     }
 }
