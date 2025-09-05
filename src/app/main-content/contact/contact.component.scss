@@ -25,7 +25,7 @@ section {
     }
     .send {
         @include dFlex($jc: flex-end);
-        >button {
+        >input {
             color: #827B7B;
             border: 1px solid #827B7B;
             padding: 20px;

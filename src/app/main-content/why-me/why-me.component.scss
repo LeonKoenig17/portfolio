@@ -3,19 +3,13 @@
 section {
     @include dFlex();
     @include contentLimit();
-    #why-me-image {
-        // height: 400px;
-        >img {
-            // object-fit: cover;
-            // height: 100%;
-            // width: auto;
-        }
-    }
+    gap: 40px;
     #why-me-text {
         @include dFlex($ai: flex-end);
         flex-direction: column;
         text-align: right;
         gap: 20px;
+        width: 100%;
         p {
             margin: 0;
         }
