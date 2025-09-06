@@ -15,7 +15,6 @@ section {
 }
 
 .comments-container {
-    @include dFlex();
-    // @include contentLimit();
+    @include dFlex($ai: flex-start);
     gap: 50px;
 }

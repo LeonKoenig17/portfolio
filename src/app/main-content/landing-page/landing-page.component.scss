@@ -18,7 +18,7 @@ section {
             margin: 0;
         }
     }
-    >img {
+    >svg {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -43,5 +43,8 @@ section {
         cursor: pointer;
         border: 1px solid $primary-font-color;
         padding: 10px;
+        >path {
+            fill: $primary-font-color;
+        }
     }
 }
