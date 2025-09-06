@@ -38,13 +38,11 @@ section {
     }
 }
 
-.arrow-down {
-    &:hover {
-        cursor: pointer;
-        border: 1px solid $primary-font-color;
-        padding: 10px;
-        >path {
-            fill: $primary-font-color;
-        }
+.arrow-down:hover {
+    cursor: pointer;
+    border: 1px solid $primary-font-color;
+    padding: 10px;
+    >path {
+        fill: $primary-font-color;
     }
 }
