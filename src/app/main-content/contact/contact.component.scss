@@ -56,12 +56,36 @@ section {
     }
     >div {
         gap: 40px;
-        padding-right: 40px;
         display: grid;
     }
     >textarea {
         height: calc(100% - 18px * 2);
         resize: none;
+    }
+}
+
+.input-wrapper {
+    position: relative;
+    padding-right: 40px;
+    > img {
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+}
+
+.textarea-wrapper {
+    position: relative;
+    height: 100%;
+    > textarea {
+        resize: none;
+    }
+    > img {
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        transform: translateY(-50%)
     }
 }
 
@@ -136,4 +160,9 @@ input, textarea {
         color: $primary-font-color !important;
         cursor: pointer !important;
     }
+}
+
+.invalid::placeholder {
+    color: #F92103;
+    opacity: 100%;
 }

@@ -24,13 +24,30 @@
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="input">
             <div>
-                <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your Name" required>
-                <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                <div class="input-wrapper">
+                    <input [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                        [placeholder]="name.invalid && name.touched ? 'Your name is required' : 'Your Name'"
+                        [ngClass]="{'invalid': name.invalid && name.touched}"
+                        #name="ngModel" minlength="4" required>
+                    <img src="./assets/images/green-tick.png" alt="valid" *ngIf="name.valid && name.touched">
+                    <img src="./assets/images/red-exMark.png" alt="invalid" *ngIf="name.invalid && name.touched">
+                </div>
+                <div class="input-wrapper">
+                    <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                        [placeholder]="email.invalid && email.touched ? 'Your email is required' : 'Your Email'"
+                        [ngClass]="{'invalid': email.invalid && email.touched}"
+                        #email="ngModel" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                    <img src="./assets/images/green-tick.png" alt="valid" *ngIf="email.valid && email.touched">
+                    <img src="./assets/images/red-exMark.png" alt="invalid" *ngIf="email.invalid && email.touched">
+                </div>
             </div>
-            <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your Message" required></textarea>
-            @if (message.valid && message.touched) {
-                <span>Please enter valid value</span>
-            }
+            <div class="textarea-wrapper">
+                <textarea [(ngModel)]="contactData.message" id="message" name="message" 
+                    [placeholder]="message.invalid && message.touched ? 'A message is required' : 'Your Message'" 
+                    #message="ngModel" required></textarea>
+                <img src="./assets/images/green-tick.png" alt="valid" *ngIf="message.valid && message.touched">
+                <img src="./assets/images/red-exMark.png" alt="invalid" *ngIf="message.invalid && message.touched">
+            </div>
         </div>
         <div class="policy-agreement">
             <div class="checkbox" (click)="togglePath()">
@@ -41,7 +58,7 @@
             <p>I've read the <span>privacy policy</span> and agree to the processing of the data as outlined.</p>
         </div>
         <div class="send">
-            <input [ngClass]="{'agreed': currentPath == checkedPath}" 
+            <input [ngClass]="{'agreed': currentPath == checkedPath && name.valid && email.valid && message.valid}" 
                 [disabled]="currentPath == uncheckedPath"
                 type="submit" value="Send">
         </div>

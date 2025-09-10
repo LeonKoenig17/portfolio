@@ -2,12 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ScrollService } from '../../shared/services/scroll.service';
-import { NgClass } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, NgClass],
+  imports: [FormsModule, NgClass, NgIf],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -35,7 +35,7 @@ export class ContactComponent {
     email: "",
     message: ""
   }
-  mailTest = true;
+  mailTest = false; // test mode (does not send actual email)
   post = {
     endPoint: 'https://deineDomain.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -62,7 +62,8 @@ export class ContactComponent {
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
-      ngForm.resetForm();
+      ngForm.resetForm(); // Test mode: just reset the form without sending
+      this.currentPath = this.uncheckedPath;
     }
   }
 }
