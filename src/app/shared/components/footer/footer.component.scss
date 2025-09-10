@@ -26,8 +26,12 @@ section {
             font-size: 12px;
         }
     }
-    .links > a {
-        margin-left: 20px;
+    .links {
+        display: flex;
+        gap: 20px;
+        > a:hover path {
+            fill: $primary-font-color;
+        }
     }
 }
 
@@ -38,6 +42,11 @@ section {
     gap: 40px;
     a {
         font-size: 14px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            font-weight: bold;
+            color: $primary-font-color !important;
+        }
     }
 }
 

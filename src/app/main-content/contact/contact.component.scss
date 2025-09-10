@@ -141,10 +141,10 @@ input, textarea {
     }
     p {
         margin: 0;
-        span {
+        a {
             color: $secondary-font-color;
             &:hover {
-                text-decoration: underline;
+                font-weight: bold;
                 cursor: pointer;
             }
         }
