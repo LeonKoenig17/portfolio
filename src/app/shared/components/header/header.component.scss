@@ -14,6 +14,8 @@ section {
     >div {
         @include dFlex();
         gap: 48px;
+        white-space: nowrap;
+        font-size: 22px;
         >nav {
             @include dFlex();
             gap: 32px;
@@ -25,10 +27,9 @@ section {
                 }
             }
         }
-    }
-    >div {
-        white-space: nowrap;
-        font-size: 22px;
+        .mobile-menu {
+            display: none;
+        }
     }
 }
 
@@ -39,4 +40,26 @@ section * {
 .header-logo {
     font-family: Handjet;
     font-size: 48px;
+}
+
+@media (max-width: $mobile-width) {
+    :host {
+        display: block;
+    }
+    
+    section {
+        height: 70px;
+        width: calc(100vw - 40px);
+        padding: 0 20px;
+        >div nav, .lang {
+            display: none;
+        }
+        >div {
+            width: 100%;
+            justify-content: space-between;
+            .mobile-menu {
+                display: block;
+            }
+        }
+    }
 }

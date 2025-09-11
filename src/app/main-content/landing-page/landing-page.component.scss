@@ -51,3 +51,29 @@ section {
         fill: $primary-font-color;
     }
 }
+
+@media (max-width: $mobile-width) {
+    section {
+        flex-direction: column-reverse;
+        width: calc(100vw - 40px);
+        padding: 0 20px;
+        padding-top: 80px;
+        height: auto;
+        svg, a {
+            display: none;
+        }
+        >div {
+            padding-top: 20px;
+            align-items: center;
+            >p {
+                font-size: 24px;
+            }
+            >h1 {
+                font-size: 40px;
+            }
+        }
+        >img {
+            width: 100%;
+        }
+    }
+}

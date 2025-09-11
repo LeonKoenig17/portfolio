@@ -53,3 +53,44 @@ section {
         }
     }
 }
+
+@media (max-width: $mobile-width) {
+    :host {
+        display: block;
+        padding-top: 50px;
+    }
+
+    section {
+        width: calc(100vw - 40px);
+        padding: 0 20px;
+        #why-me-text {
+            align-items: center;
+            text-align: center;
+            .section-heading {
+                font-size: 32px;
+            }
+        }
+    }
+    #graphics {
+        padding-top: 40px;
+        gap: 20px;
+        >div {
+            &:first-child {
+                flex-direction: column;
+                >span {
+                    padding-bottom: 20px;
+                    font-size: 18px;
+                }
+            }
+            height: auto;
+            width: auto;
+            position: unset;
+            >* {
+                position: unset;
+            }
+        }
+    }
+    .arrow, #graphics br, #why-me-image {
+        display: none;
+    }
+}
