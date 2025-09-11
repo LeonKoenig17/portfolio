@@ -44,6 +44,7 @@
             <div class="textarea-wrapper">
                 <textarea [(ngModel)]="contactData.message" id="message" name="message" 
                     [placeholder]="message.invalid && message.touched ? 'A message is required' : 'Your Message'" 
+                    [ngClass]="{'invalid': message.invalid && message.touched}"
                     #message="ngModel" required></textarea>
                 <img src="./assets/images/green-tick.png" alt="valid" *ngIf="message.valid && message.touched">
                 <img src="./assets/images/red-exMark.png" alt="invalid" *ngIf="message.invalid && message.touched">

@@ -1,5 +1,10 @@
 @import "./../../../styles.scss";
 
+:host {
+    @include dFlex();
+    padding-top: 0;
+}
+
 section {
     @include dFlex($jc: space-between);
     @include contentLimit(600px);
