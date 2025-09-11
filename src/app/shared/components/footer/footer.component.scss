@@ -1,13 +1,14 @@
 @import "./../../../../styles.scss";
 
-section {
+:host {
     @include dFlex();
     padding-top: 80px;
-    #content {
-        @include contentLimit($height: 200px);
-        * {
-            color: $secondary-font-color;
-        }
+}
+
+section {
+    @include contentLimit($height: 200px);
+    * {
+        color: $secondary-font-color;
     }
 }
 

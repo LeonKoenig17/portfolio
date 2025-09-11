@@ -1,33 +1,34 @@
 @import "./../../../../styles.scss";
 
-section {
+:host {
     @include dFlex();
     background: linear-gradient(#0B042D 50%, #0B042D33);
     position: fixed;
     width: 100%;
     z-index: 1000;
-    #content {
-        @include dFlex($jc: space-between);
-        @include contentLimit(90px, $padX: 140px);
-        >div {
+}
+
+section {
+    @include dFlex($jc: space-between);
+    @include contentLimit(90px, $padX: 140px);
+    >div {
+        @include dFlex();
+        gap: 48px;
+        >nav {
             @include dFlex();
-            gap: 48px;
-            >nav {
-                @include dFlex();
-                gap: 32px;
-                >a {
-                    white-space: nowrap;
-                    font-size: 22px;
-                    &:hover {
-                        color: $primary-font-color;
-                    }
+            gap: 32px;
+            >a {
+                white-space: nowrap;
+                font-size: 22px;
+                &:hover {
+                    color: $primary-font-color;
                 }
             }
         }
-        >div {
-            white-space: nowrap;
-            font-size: 22px;
-        }
+    }
+    >div {
+        white-space: nowrap;
+        font-size: 22px;
     }
 }
 
