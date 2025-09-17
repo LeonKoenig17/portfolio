@@ -6,18 +6,29 @@
 }
 
 section {
-    @include dFlex($ai: flex-start);
     @include contentLimit();
     flex-direction: column;
-    gap: 80px;
+    .section-heading {
+        margin-bottom: 80px;
+    }
     >div {
-        @include dFlex($jc: flex-start, $ai: flex-start);
-        width: 100%;
+        @include dFlex($jc: flex-start);
         flex-wrap: wrap;
-        gap: 120px 0;
-        >app-single-skill {
-            @include dFlex($jc: flex-start);
-            width: 16%;
+        gap: 120px 140px;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    section {
+        width: calc(100vw - 40px);
+        padding: 0 20px;
+        .section-heading {
+            font-size: 32px;
+            width: 100%;
+            text-align: center;
+        }
+        >div {
+            gap: 40px 40px;
         }
     }
 }
