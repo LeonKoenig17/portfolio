@@ -1,9 +1,8 @@
 @import "./../../../../styles.scss";
 
 section {
-    @include dFlex($ai: flex-start);
-    @include contentLimit();
-    gap: 60px;
+    // @include dFlex($ai: flex-start);
+    // gap: 60px;
     img {
         width: 100%;
         max-width: 650px;
@@ -37,7 +36,6 @@ section {
     .test-button {
         color: black;
         background-color: $primary-font-color;
-        margin: 0 30px;
         transition: color 0.3s ease;
         &:hover {
             color: $secondary-font-color;
@@ -50,5 +48,29 @@ section {
     text-align: right;
     .text-div .test-button {
         margin-right: 0;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    section {
+        .text-div {
+            > * {
+                text-align: center;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            p, a {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .buttons {
+        @include dFlex();
+        gap: 20px;
+        a {
+            padding: 12px 20px;
+        }
     }
 }

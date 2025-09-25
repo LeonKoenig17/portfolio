@@ -1,10 +1,13 @@
 <section [ngClass]="{ 'reversed': isReversed}">
-    <img src={{data.image}} alt="project-image">
+    <img *ngIf="!isMobile" src={{data.image}} alt="project-image">
     <div class="text-div">
         <h2>{{data.title}}</h2>
         <span>{{data.skills}}</span>
         <p>{{data.text}}</p>
-        <a class="git-button" href={{data.gitLink}}>Github</a>
-        <a class="test-button" href={{data.liveLink}}>Live Test</a>
+        <img *ngIf="isMobile" src={{data.image}} alt="project-image">
+        <div class="buttons">
+            <a class="git-button" href={{data.gitLink}}>Github</a>
+            <a class="test-button" href={{data.liveLink}}>Live Test</a>
+        </div>
     </div>
 </section>

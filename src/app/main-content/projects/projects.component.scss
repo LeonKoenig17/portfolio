@@ -6,6 +6,7 @@
 }
 
 section {
+    @include contentLimit();
     >h2 {
         margin-bottom: 60px;
         text-align: center;
@@ -13,5 +14,15 @@ section {
     >div {
         display: grid;
         gap: 60px;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    section {
+        width: calc(100vw - 40px);
+        padding: 0 20px;
+        h2 {
+            font-size: 32px;
+        }
     }
 }
