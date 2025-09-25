@@ -66,4 +66,6 @@ export class ContactComponent {
       this.currentPath = this.uncheckedPath;
     }
   }
+  
+  isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
 }

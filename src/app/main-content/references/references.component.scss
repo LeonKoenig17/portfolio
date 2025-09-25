@@ -7,7 +7,7 @@
 
 section {
     @include contentLimit();
-    >p {
+    >p, >span {
         font-size: 24px;
         color: $secondary-font-color;
     }
@@ -22,4 +22,21 @@ section {
 .comments-container {
     @include dFlex($ai: flex-start);
     gap: 50px;
+}
+
+@media (max-width: $mobile-width) {
+    section {
+        width: calc(100vw - 40px);
+        padding: 0 20px;
+        >p, >span {
+            text-align: center;
+        }
+        >span {
+            font-size: 16px;
+        }
+    }
+
+    .comments-container {
+        gap: 20px;
+    }
 }
