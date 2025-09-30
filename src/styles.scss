@@ -26,8 +26,11 @@ $secondary-font-color: #E15544;
 $debugBorder: 1px dotted rgba(255, 0, 0, 0.5);
 $mobile-width: 768px;
 
+html, body {
+  overflow-y: auto;
+}
+
 body {
-    min-height: 100vh;
     margin: 0;
     background: linear-gradient(170deg, #0B042D, #1F0B80, #0B042F, #241085);
     * {

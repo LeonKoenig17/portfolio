@@ -1,13 +1,25 @@
 <section>
-    <div>
+    <div class="base-container">
         <a href="" class="header-logo" (click)="scrollTo('landing-page')">&lt;LK&gt;</a>
+        <nav *ngIf="!isMobile">
+            <a (click)="scrollTo('why-me')">Why me</a>
+            <a (click)="scrollTo('skills')">Skills</a>
+            <a (click)="scrollTo('projects')">Projects</a>
+            <a (click)="scrollTo('contact')">Contact</a>
+            <a href="">DE | EN</a>
+        </nav>
+        <div *ngIf="isMobile"><img src="./assets/images/burger-menu.png" (click)="openMenu()" alt="context-menu"></div>
+    </div>
+    <div *ngIf="isMobile && showMenu" class="context-menu">
+        <div>
+            <img src="./assets/images/close-context.png" (click)="closeMenu()" alt="">
+        </div>
         <nav>
             <a (click)="scrollTo('why-me')">Why me</a>
             <a (click)="scrollTo('skills')">Skills</a>
             <a (click)="scrollTo('projects')">Projects</a>
             <a (click)="scrollTo('contact')">Contact</a>
+            <a href="">DE | EN</a>
         </nav>
-        <div class="mobile-menu"><img src="./assets/images/burger-menu.png" alt="context-menu"></div>
     </div>
-    <div class="lang">DE | EN</div>
 </section>

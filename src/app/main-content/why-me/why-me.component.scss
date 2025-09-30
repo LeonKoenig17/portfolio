@@ -65,7 +65,7 @@ section {
 @media (max-width: $mobile-width) {
     :host {
         display: block;
-        padding-top: 50px;
+        padding-top: 60px;
     }
 
     section {
@@ -89,7 +89,6 @@ section {
         }
     }
     #graphics {
-        // padding-top: 40px;
         gap: 20px;
         >div {
             position: unset;

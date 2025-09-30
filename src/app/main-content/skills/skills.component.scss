@@ -19,6 +19,10 @@ section {
 }
 
 @media (max-width: $mobile-width) {
+    :host {
+        padding-top: 60px;
+    }
+
     section {
         width: calc(100vw - 40px);
         padding: 0 20px;

@@ -27,9 +27,6 @@ section {
                 }
             }
         }
-        .mobile-menu {
-            display: none;
-        }
     }
 }
 
@@ -42,6 +39,26 @@ section * {
     font-size: 48px;
 }
 
+.context-menu {
+    @include dFlex();
+    width: calc(100% - 40px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 40px;
+    background: linear-gradient(#13074E, #1D0A79F2);
+    gap: 20px !important;
+    >div {
+        width: 100%;
+        @include dFlex($jc: flex-end);
+    }
+    >nav {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: $mobile-width) {
     :host {
         display: block;
@@ -51,15 +68,9 @@ section * {
         height: 70px;
         width: calc(100vw - 40px);
         padding: 0 20px;
-        >div nav, .lang {
-            display: none;
-        }
-        >div {
+        .base-container {
             width: 100%;
             justify-content: space-between;
-            .mobile-menu {
-                display: block;
-            }
         }
     }
 }

@@ -173,6 +173,10 @@ input, textarea {
 }
 
 @media (max-width: $mobile-width) {
+    :host {
+        padding-top: 60px;
+    }
+    
     .desktop {
         display: none;
     }
