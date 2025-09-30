@@ -54,14 +54,6 @@ section {
     }
 }
 
-.non-resp {
-    display: block;
-}
-
-.resp {
-    display: none;
-}
-
 @media (max-width: $mobile-width) {
     :host {
         display: block;
@@ -107,10 +99,7 @@ section {
         }
     }
 
-    .non-resp, #graphics br, #why-me-image {
+    br {
         display: none;
-    }
-    .resp {
-        display: block;
     }
 }

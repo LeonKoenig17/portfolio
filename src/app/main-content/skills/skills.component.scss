@@ -9,12 +9,14 @@ section {
     @include contentLimit();
     flex-direction: column;
     .section-heading {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
-    >div {
-        @include dFlex($jc: flex-start);
-        flex-wrap: wrap;
-        gap: 120px 140px;
+    .skills-container {
+        >div {
+            // @include dFlex($jc: flex-start);
+            flex-wrap: wrap;
+            gap: 120px 140px;
+        }
     }
 }
 
@@ -31,8 +33,17 @@ section {
             width: 100%;
             text-align: center;
         }
-        >div {
-            gap: 40px 40px;
+        .skills-container {
+            width: 100%;
+            @include dFlex();
+            >div {
+                display: inline-flex;
+                justify-content: flex-start;
+                max-width: 100%;
+                width: max-content;
+                gap: unset;
+                flex: 0 auto;
+            }
         }
     }
 }

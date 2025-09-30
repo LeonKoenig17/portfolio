@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ScrollService } from '../../shared/services/scroll.service';
 import { CommonModule } from '@angular/common';
+import { DeviceService } from '../../shared/services/device.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -10,11 +11,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
-  constructor(private scrollService: ScrollService) {}
+  constructor(private scrollService: ScrollService, public deviceService: DeviceService) {}
 
   scrollTo(sectionId: string) {
     this.scrollService.scrollTo(sectionId);
   }
-
-  isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
 }

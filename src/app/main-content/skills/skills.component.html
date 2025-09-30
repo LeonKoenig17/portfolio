@@ -1,8 +1,10 @@
 <section>
     <h2 class="section-heading">My Skills</h2>
-    <div>
-        @for (skill of skills; track $index) {
-            <app-single-skill [skill]="skill"></app-single-skill>
-        }
+    <div class="skills-container">
+        <div>
+            @for (skill of skills; track $index) {
+                <app-single-skill [skill]="skill"></app-single-skill>
+            }
+        </div>
     </div>
 </section>

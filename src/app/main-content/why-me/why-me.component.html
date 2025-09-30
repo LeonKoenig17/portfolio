@@ -1,5 +1,5 @@
 <section>
-    <div id="why-me-image">
+    <div *ngIf="!(deviceService.isMobile$ | async)" id="why-me-image">
         <img src="./assets/images/placeholder-image.png" alt="cover image">
     </div>
     <div id="why-me-text">
@@ -9,8 +9,8 @@
             Turning problems into clarity drives my inventive approach to achieve results that matter.
             After all, the most meaningful creations often begin with a single spark of passion.
         </p>
-        <div class="first-arrow">
-            <img class="resp" style="left: 200px" src="./assets/images/curved-arrow-down.png" alt="curved arrow">
+        <div *ngIf="deviceService.isMobile$ | async" class="first-arrow">
+            <img style="left: 200px" src="./assets/images/curved-arrow-down.png" alt="curved arrow">
         </div>
         <div id="graphics">
             <div class="location">
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="relocate">
-                <img class="non-resp" style="left: 200px" src="./assets/images/curved-arrow-down.png" alt="curved arrow">
+                <img *ngIf="!(deviceService.isMobile$ | async)" style="left: 200px" src="./assets/images/curved-arrow-down.png" alt="curved arrow">
                 <div style="right: 100px;">
                     <img src="./assets/images/case.png" alt="case">
                     <p>open to <br> relocate</p>
@@ -31,14 +31,14 @@
                 <div>
                     <img src="./assets/images/laptop.png" alt="laptop">
                     <p>open to <br> work remote</p>
-                    <img class="non-resp" src="./assets/images/curved-arrow-up.png" alt="curved arrow">
+                    <img *ngIf="!(deviceService.isMobile$ | async)" src="./assets/images/curved-arrow-up.png" alt="curved arrow">
                 </div>
-                <img class="non-resp" style="right: 50px;" src="./assets/images/looping-arrow.png" alt="looping arrow">
-                <img class="non-resp" style="right: 50px;" src="./assets/images/small-arrow-down.png" alt="small arrow">
+                <img *ngIf="!(deviceService.isMobile$ | async)" style="right: 50px;" src="./assets/images/looping-arrow.png" alt="looping arrow">
+                <img *ngIf="!(deviceService.isMobile$ | async)" style="right: 50px;" src="./assets/images/small-arrow-down.png" alt="small arrow">
             </div>
         </div>
-        <div class="second-arrow">
-            <img class="resp" style="right: 50px;" src="./assets/images/small-arrow-down.png" alt="small arrow">
+        <div *ngIf="deviceService.isMobile$ | async" class="second-arrow">
+            <img style="right: 50px;" src="./assets/images/small-arrow-down.png" alt="small arrow">
         </div>
         <button (click)="scrollTo('contact')">Let's talk</button>
     </div>
