@@ -30,6 +30,7 @@ export class SkillsComponent {
     {img: "./assets/images/git.png", text: "Git"},
     {img: "./assets/images/scrum.png", text: "Scrum"},
     {img: "./assets/images/material-design.png", text: "Material\ndesign"},
-    {img: "./assets/images/challenge-me.png", text: "Challenge\nme"}
+    {img: "./assets/images/challenge-me.png", text: "Challenge\nme"},
+    {img: "", text: "I am always happy to learn new skills. Just tell me what you need."}
   ]
 }

@@ -1,13 +1,13 @@
 <section>
-    <div class="base-container">
+    <div class="main-div">
         <a href="" class="header-logo" (click)="scrollTo('landing-page')">&lt;LK&gt;</a>
         <nav *ngIf="!(deviceService.isMobile$ | async)">
             <a (click)="scrollTo('why-me')">Why me</a>
             <a (click)="scrollTo('skills')">Skills</a>
             <a (click)="scrollTo('projects')">Projects</a>
             <a (click)="scrollTo('contact')">Contact</a>
-            <a href="">DE | EN</a>
         </nav>
+        <a *ngIf="!(deviceService.isMobile$ | async)" href="">DE | EN</a>
         <div *ngIf="deviceService.isMobile$ | async"><img src="./assets/images/burger-menu.png" (click)="openMenu()" alt="context-menu"></div>
     </div>
     <div *ngIf="(deviceService.isMobile$ | async) && showMenu" class="context-menu">

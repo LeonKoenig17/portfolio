@@ -18,6 +18,6 @@ export class DeviceService {
 
   private checkIsMobile(): boolean {
     return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ||
-           window.innerWidth < 768;
+           window.innerWidth < 800;
   }
 }

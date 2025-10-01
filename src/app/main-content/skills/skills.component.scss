@@ -9,13 +9,14 @@ section {
     @include contentLimit();
     flex-direction: column;
     .section-heading {
-        margin: 40px;
+        margin: 40px 0;
     }
     .skills-container {
         >div {
-            // @include dFlex($jc: flex-start);
-            // flex-wrap: wrap;
-            // gap: 120px 140px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            justify-content: flex-start;
+            row-gap: 80px;
         }
     }
 }
@@ -42,6 +43,7 @@ section {
                 grid-template-columns: repeat(3, 1fr);
                 justify-content: center;
                 align-items: center;
+                row-gap: 0;
             }
         }
     }

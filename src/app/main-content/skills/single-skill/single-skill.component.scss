@@ -1,5 +1,9 @@
 @import "./../../../../styles.scss";
 
+:host {
+    // width: 90px;
+}
+
 section {
     @include dFlex();
     flex-direction: column;
@@ -10,10 +14,6 @@ section {
 }
 
 @media (max-width: $mobile-width) {
-
-    :host {
-        width: 90px;
-    }
 
     section {
         margin: 20px;

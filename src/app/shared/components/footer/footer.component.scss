@@ -61,6 +61,10 @@ section {
     :host {
         padding-top: 50px;
     }
+
+    section {
+        height: unset;
+    }
     
     .info {
         flex-direction: column;

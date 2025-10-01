@@ -9,10 +9,11 @@
 }
 
 section {
-    @include dFlex($jc: space-between);
+    @include dFlex();
     @include contentLimit(90px, $padX: 140px);
-    >div {
-        @include dFlex();
+    .main-div {
+        @include dFlex($jc: space-between);
+        width: 100%;
         gap: 48px;
         white-space: nowrap;
         font-size: 22px;
@@ -40,38 +41,37 @@ section * {
     font-weight: bold;
 }
 
-.context-menu {
-    @include dFlex();
-    width: calc(100% - 40px);
-    position: fixed;
-    top: 0;
-    left: 0;
-    flex-direction: column;
-    padding: 20px;
-    padding-bottom: 40px;
-    background: linear-gradient(#13074E, #1D0A79F2);
-    gap: 20px !important;
-    >div {
-        width: 100%;
-        @include dFlex($jc: flex-end);
-    }
-    >nav {
-        flex-direction: column;
-    }
-}
-
 @media (max-width: $mobile-width) {
-    :host {
-        display: block;
-    }
     
     section {
         height: 70px;
         width: calc(100vw - 40px);
         padding: 0 20px;
-        .base-container {
+        .main-div {
             width: 100%;
             justify-content: space-between;
+        }
+    }
+
+    .context-menu {
+        @include dFlex();
+        width: calc(100% - 40px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        padding: 20px;
+        padding-bottom: 40px;
+        background: linear-gradient(#13074E, #1D0A79F2);
+        gap: 20px !important;
+        >div {
+            width: 100%;
+            @include dFlex($jc: flex-end);
+        }
+        >nav {
+            @include dFlex();
+            flex-direction: column;
+            gap: 24px;
         }
     }
 }

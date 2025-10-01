@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { DeviceService } from '../../../shared/services/device.service';
 
 @Component({
   selector: 'app-single-project',
@@ -9,6 +10,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './single-project.component.scss'
 })
 export class SingleProjectComponent {
+  constructor(public deviceService: DeviceService) {}
+
   @Input() data = {
     image: "./assets/images/join.png",
     title: "Join",
