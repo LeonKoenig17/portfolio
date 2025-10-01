@@ -20,7 +20,7 @@ section {
     >p {
         font-size: 23px;
     }
-    >div:first-child {
+    .logo-div {
         @include dFlex();
         flex-direction: column;
         >p {
@@ -54,4 +54,29 @@ section {
 .footer-logo {
     font-family: Handjet;
     font-size: 54px;
+    font-weight: bold;
+}
+
+@media (max-width: $mobile-width) {
+    :host {
+        padding-top: 50px;
+    }
+    
+    .info {
+        flex-direction: column;
+        align-items: center;
+        .footer-logo {
+            font-size: 48px;
+            margin-top: 30px;
+        }
+        >p {
+            font-size: 14px;
+        }
+    }
+
+    .legal-notice {
+        flex-direction: column;
+        gap: 6px;
+        padding-bottom: 40px;
+    }
 }

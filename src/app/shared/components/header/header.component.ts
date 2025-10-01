@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ScrollService } from '../../services/scroll.service';
 import { CommonModule } from "@angular/common";
+import { DeviceService } from '../../services/device.service';
 
 @Component({
   selector: 'app-header',
@@ -10,11 +11,8 @@ import { CommonModule } from "@angular/common";
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  constructor(private scrollService: ScrollService) {
+  constructor(private scrollService: ScrollService, public deviceService: DeviceService) {}
 
-  }
-
-  isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
   showMenu = false;
 
   openMenu() {

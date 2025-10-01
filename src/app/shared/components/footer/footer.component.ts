@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
+import { DeviceService } from '../../services/device.service';
+import { AsyncPipe, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [AsyncPipe, NgIf],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+  constructor(public deviceService: DeviceService) {}
 }

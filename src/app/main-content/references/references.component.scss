@@ -50,5 +50,7 @@ section {
         justify-content: flex-start;
         overflow-x: auto;
         gap: 20px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
 }
