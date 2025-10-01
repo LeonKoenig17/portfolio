@@ -7,4 +7,9 @@
             }
         </div>
     </div>
+    <div *ngIf="deviceService.isMobile$ | async" class="arrow-container">
+        <img src="./assets/images/skills-arrow.png" alt="">
+        <p>I am always happy to learn new skills. Just tell me what you need.</p>
+        <button (click)="scrollTo('contact')">Let's talk</button>
+    </div>
 </section>

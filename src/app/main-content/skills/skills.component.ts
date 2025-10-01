@@ -1,14 +1,24 @@
 import { Component } from '@angular/core';
 import { SingleSkillComponent } from './single-skill/single-skill.component';
+import { DeviceService } from '../../shared/services/device.service';
+import { AsyncPipe, NgIf } from '@angular/common';
+import { ScrollService } from '../../shared/services/scroll.service';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [SingleSkillComponent],
+  imports: [SingleSkillComponent, NgIf, AsyncPipe],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+
+  constructor(private scrollService: ScrollService, public deviceService: DeviceService) {}
+
+  scrollTo(sectionId: string) {
+    this.scrollService.scrollTo(sectionId);
+  }
+
   skills = [
     {img: "./assets/images/angular.png", text: "Angular"},
     {img: "./assets/images/typescript.png", text: "Typescript"},
@@ -20,7 +30,6 @@ export class SkillsComponent {
     {img: "./assets/images/git.png", text: "Git"},
     {img: "./assets/images/scrum.png", text: "Scrum"},
     {img: "./assets/images/material-design.png", text: "Material\ndesign"},
-    {img: "./assets/images/challenge-me.png", text: "Challenge\nme", 
-      message: "I am always happy to learn new skills. Just tell me what you need."}
+    {img: "./assets/images/challenge-me.png", text: "Challenge\nme"}
   ]
 }

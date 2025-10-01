@@ -2,8 +2,8 @@
     <img *ngIf="!isMobile" src={{data.image}} alt="project-image">
     <div class="text-div">
         <h2>{{data.title}}</h2>
-        <span>{{data.skills}}</span>
-        <p>{{data.text}}</p>
+        <p class="skills">{{data.skills}}</p>
+        <p class="description">{{data.text}}</p>
         <img *ngIf="isMobile" src={{data.image}} alt="project-image">
         <div class="buttons">
             <a class="git-button" href={{data.gitLink}}>Github</a>
