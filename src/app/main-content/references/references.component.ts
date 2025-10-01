@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommentComponent } from './comment/comment.component';
 import { CommonModule } from '@angular/common';
+import { DeviceService } from '../../shared/services/device.service';
 
 @Component({
   selector: 'app-references',
@@ -10,6 +11,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './references.component.scss'
 })
 export class ReferencesComponent {
+  constructor(public deviceService: DeviceService) {}
+
   comments = [
     {
       name: "Noah Mueller",

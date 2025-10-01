@@ -176,25 +176,24 @@ input, textarea {
     :host {
         padding-top: 60px;
     }
-    
-    .desktop {
-        display: none;
-    }
 
     section {
         width: calc(100vw - 40px);
         padding: 0 20px;
         .heading {
             display: block;
+            margin: 0;
             h2 {
                 font-size: 32px;
                 text-align: center;
+                margin: 0;
             }
         }
         .info p {
             width: auto;
             font-size: 16px;
             text-align: center;
+            padding: 0;
         }
     }
 
@@ -209,6 +208,9 @@ input, textarea {
             padding-bottom: 20px;
             .input-wrapper {
                 padding-right: 0;
+                >img {
+                    right: 20px;
+                }
             }
         }
         .textarea-wrapper {
@@ -238,6 +240,10 @@ input, textarea {
     .send {
         justify-content: center !important;
         margin-top: 20px;
+        input {
+            width: 80px !important;
+            padding: 10px !important;
+        }
     }
 
     .mobile-info {
@@ -245,15 +251,15 @@ input, textarea {
             @include dFlex($jc: flex-end);
         }
         .contact-info {
-            margin: 30px 0;
+            gap: 0;
             >div {
-                // @include dFlex();
                 flex-direction: column;
                 text-align: center;
                 margin: 10px;
                 >img {
                     max-height: 30px;
                     margin-bottom: 8px;
+                    padding: 0;
                 }
             }
         }

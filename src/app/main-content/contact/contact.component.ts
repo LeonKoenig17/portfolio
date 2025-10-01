@@ -2,17 +2,18 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { ScrollService } from '../../shared/services/scroll.service';
 import { FormsModule, NgForm } from '@angular/forms';
-import { NgClass, NgIf } from '@angular/common';
+import { AsyncPipe, NgClass, NgIf } from '@angular/common';
+import { DeviceService } from '../../shared/services/device.service';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, NgClass, NgIf],
+  imports: [FormsModule, NgClass, NgIf, AsyncPipe],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  constructor(private scrollService: ScrollService) {}
+  constructor(private scrollService: ScrollService, public deviceService: DeviceService) {}
 
   scrollTo(sectionId: string) {
     this.scrollService.scrollTo(sectionId);
@@ -66,6 +67,4 @@ export class ContactComponent {
       this.currentPath = this.uncheckedPath;
     }
   }
-  
-  isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
 }

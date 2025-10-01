@@ -7,7 +7,13 @@
 
 section {
     @include contentLimit();
-    >p, >span {
+    >h2 {
+        font-weight: bold;
+        font-size: 24px;
+        color: $secondary-font-color;
+        margin: 0;
+    }
+    >p {
         font-size: 24px;
         color: $secondary-font-color;
     }
@@ -32,15 +38,17 @@ section {
     section {
         width: calc(100vw - 40px);
         padding: 0 20px;
-        >p, >span {
+        >h2, >p {
             text-align: center;
         }
-        >span {
+        >p {
             font-size: 16px;
         }
     }
 
     .comments-container {
+        justify-content: flex-start;
+        overflow-x: auto;
         gap: 20px;
     }
 }

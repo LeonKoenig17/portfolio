@@ -1,8 +1,8 @@
 <section>
-    <p>Need a teamplayer?</p>
-    <span>Here's what my colleagues said about me.</span>
+    <h2>Need a teamplayer?</h2>
+    <p>Here's what my colleagues said about me.</p>
     <div>
-        <img src="./assets/images/long-arrow-right.png" alt="arrow-right"> <!--37° rotation-->
+        <img *ngIf="!(deviceService.isMobile$ | async)" src="./assets/images/long-arrow-right.png" alt="arrow-right"> <!--37° rotation-->
         <div class="comments-container">
             @for (comment of comments; track $index) {
                 <app-comment [comment]="comment"></app-comment>

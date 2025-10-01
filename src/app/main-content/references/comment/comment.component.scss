@@ -5,7 +5,7 @@ section {
         color: $secondary-font-color;
         font-size: 24px;
     }
-    span, p {
+    .project, .text {
         font-size: 18px;
     }
 }
@@ -14,11 +14,18 @@ section {
     section {
         border: 1px solid $primary-font-color;
         width: 230px;
-        overflow-x: scroll;
+        height: 240px;
+        overflow: hidden;
+        text-align: center;
         h2 {
             font-size: 24px;
+            margin-top: 10px;
+            margin-bottom: 0;
         }
-        span, p {
+        .project {
+            margin: 0;
+        }
+        .project, .text {
             font-size: 16px;
         }
     }
