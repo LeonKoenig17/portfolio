@@ -2,13 +2,18 @@
 
 :host {
     @include dFlex();
-    padding-top: 0;
+    padding-top: 50px;
 }
 
 section {
     @include dFlex($jc: space-between);
     @include contentLimit(600px);
     position: relative;
+    >img {
+            position: absolute;
+            right: 0;
+            z-index: -100;
+        }
     >div {
         @include dFlex($jc: flex-end, $ai: flex-start);
         height: 100%;
@@ -52,7 +57,17 @@ section {
     }
 }
 
+@media (max-width: 1200px) {
+    section {
+
+    }
+}
+
 @media (max-width: $mobile-width) {
+    :host {
+        padding-top: 0;
+    }
+
     section {
         flex-direction: column-reverse;
         width: calc(100vw - 40px);
@@ -71,6 +86,7 @@ section {
         }
         >img {
             width: 100%;
+            position: unset;
         }
     }
 }

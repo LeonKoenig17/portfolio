@@ -1,7 +1,7 @@
 @import "./../../../../styles.scss";
 
 section {
-    @include dFlex($ai: flex-start);
+    @include dFlex();
     gap: 60px;
     img {
         width: 50%;
@@ -29,6 +29,7 @@ section {
         background: none;
         box-shadow: inset 0 0 0 1px $primary-font-color;
         transition: color 0.3s ease;
+        margin-right: 20px;
         &:hover {
             color: $primary-font-color;
         }
@@ -37,6 +38,7 @@ section {
         color: black;
         background-color: $primary-font-color;
         transition: color 0.3s ease;
+        white-space: nowrap;
         &:hover {
             color: $secondary-font-color;
         }
