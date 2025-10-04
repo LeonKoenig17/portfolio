@@ -67,11 +67,12 @@ section {
             text-align: center;
             .first-arrow {
                 @include dFlex($jc: flex-start);
-                width: 100%;
             }
             .second-arrow {
                 @include dFlex($jc: flex-end);
-                width: 100%;
+            }
+            .first-arrow, .second-arrow {
+                width: 300px;
             }
             .section-heading {
                 font-size: 32px;

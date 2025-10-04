@@ -3,12 +3,13 @@ import { DeviceService } from '../shared/services/device.service';
 import { AsyncPipe, NgIf } from '@angular/common';
 
 @Component({
-  selector: 'app-legal-notice',
+  selector: 'app-impressum',
   standalone: true,
   imports: [NgIf, AsyncPipe],
-  templateUrl: './legal-notice.component.html',
-  styleUrl: './legal-notice.component.scss'
+  templateUrl: './impressum.component.html',
+  styleUrl: './impressum.component.scss'
 })
-export class LegalNoticeComponent {
+export class ImpressumComponent {
   constructor(public deviceService: DeviceService) {}
+
 }

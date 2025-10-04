@@ -38,7 +38,7 @@ export class ContactComponent {
   }
   mailTest = false; // test mode (does not send actual email)
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://leonk-thedev.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -53,7 +53,6 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
           },
           error: (error) => {
@@ -62,7 +61,6 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
       ngForm.resetForm(); // Test mode: just reset the form without sending
       this.currentPath = this.uncheckedPath;
     }

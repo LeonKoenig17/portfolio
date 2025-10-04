@@ -1,6 +1,9 @@
 <section>
+    <div *ngIf="deviceService.isMobile$ | async" class="arrow">
+        <a href="/"><img src="./assets/images/back-arrow.png" alt=""></a>
+    </div>
     <h1>Legal Notice</h1>
-    <div>
+    <div class="text">
         <h2>Imprint</h2>
         <ul>
             <li>Leon König</li>
