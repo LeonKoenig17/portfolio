@@ -35,6 +35,18 @@ section * {
     color: $secondary-font-color;
 }
 
+.lang-buttons {
+    @include dFlex();
+    >button {
+        font-size: 22px;
+        border: none;
+        background: none;
+        &:hover {
+            color: $primary-font-color;
+        }
+    }
+}
+
 .header-logo {
     font-family: Handjet;
     font-size: 48px;

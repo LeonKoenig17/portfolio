@@ -12,7 +12,9 @@ section {
     >img {
             position: absolute;
             right: 0;
+            top: 30px;
             z-index: -100;
+            max-width: 500px;
         }
     >div {
         @include dFlex($jc: flex-end, $ai: flex-start);

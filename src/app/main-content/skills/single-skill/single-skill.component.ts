@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-single-skill',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './single-skill.component.html',
   styleUrl: './single-skill.component.scss'
 })

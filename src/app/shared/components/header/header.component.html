@@ -2,12 +2,16 @@
     <div class="main-div">
         <a href="" class="header-logo" (click)="scrollTo('landing-page')">&lt;LK&gt;</a>
         <nav *ngIf="!(deviceService.isMobile$ | async)">
-            <a (click)="scrollTo('why-me')">Why me</a>
-            <a (click)="scrollTo('skills')">Skills</a>
-            <a (click)="scrollTo('projects')">Projects</a>
-            <a (click)="scrollTo('contact')">Contact</a>
+            <a (click)="scrollTo('why-me')">{{"header.nav1" | translate}}</a>
+            <a (click)="scrollTo('skills')">{{"header.nav2" | translate}}</a>
+            <a (click)="scrollTo('projects')">{{"header.nav3" | translate}}</a>
+            <a (click)="scrollTo('contact')">{{"header.nav4" | translate}}</a>
         </nav>
-        <a *ngIf="!(deviceService.isMobile$ | async)" href="">DE | EN</a>
+        <div *ngIf="!(deviceService.isMobile$ | async)" class="lang-buttons">
+                <button (click)="translateText('de')">DE</button>
+                <span>|</span>
+                <button (click)="translateText('en')">EN</button>
+            </div>
         <div *ngIf="deviceService.isMobile$ | async"><img src="./assets/images/burger-menu.png" (click)="openMenu()" alt="context-menu"></div>
     </div>
     <div *ngIf="(deviceService.isMobile$ | async) && showMenu" class="context-menu">
@@ -19,7 +23,10 @@
             <a (click)="scrollTo('skills')">Skills</a>
             <a (click)="scrollTo('projects')">Projects</a>
             <a (click)="scrollTo('contact')">Contact</a>
-            <a href="">DE | EN</a>
+            <div class="lang-buttons">
+                <button (click)="translateText('de')">DE</button>
+                <button (click)="translateText('en')">EN</button>
+            </div>
         </nav>
     </div>
 </section>

@@ -1,0 +1,13 @@
+{
+    "header": {
+        "nav1": "Warum ich",
+        "nav2": "Skills",
+        "nav3": "Projekte",
+        "nav4": "Kontakt"
+    },
+    "landing-page": {
+        "title" : "Frontend-Entwickler",
+        "button": "Kontaktiere mich"
+    }
+
+}

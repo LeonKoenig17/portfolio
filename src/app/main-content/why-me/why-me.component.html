@@ -3,32 +3,30 @@
         <img src="./assets/images/placeholder-image.png" alt="cover image">
     </div>
     <div id="why-me-text">
-        <h2 class="section-heading">Why me</h2>
-        <p>
-            Turning problems into clarity drives my inventive approach on creating websites, achieving results that matter.
-        </p>
+        <h2 class="section-heading">{{"why-me.heading" | translate}}</h2>
+        <p>{{"why-me.p" | translate}}</p>
         <div *ngIf="deviceService.isMobile$ | async" class="first-arrow">
             <img style="left: 200px" src="./assets/images/curved-arrow-down.png" alt="curved arrow">
         </div>
         <div id="graphics">
             <div class="location">
-                <span style="left: 0">I am</span>
+                <span style="left: 0">{{"why-me.Iam" | translate}}</span>
                 <div>
                     <img src="./assets/images/location-pin.png" alt="location pin">
-                    <p>located <br> in Passau</p> 
+                    <p [innerHTML]="'why-me.location' | translate"></p> 
                 </div>
             </div>
             <div class="relocate">
                 <img *ngIf="!(deviceService.isMobile$ | async)" style="left: 200px" src="./assets/images/curved-arrow-down.png" alt="curved arrow">
                 <div style="right: 100px;">
                     <img src="./assets/images/case.png" alt="case">
-                    <p>open to <br> relocate</p>
+                    <p [innerHTML]="'why-me.relocate' | translate"></p>
                 </div>
             </div>
             <div class="remote">
                 <div>
                     <img src="./assets/images/laptop.png" alt="laptop">
-                    <p>open to <br> work remote</p>
+                    <p [innerHTML]="'why-me.remote' | translate"></p>
                     <img *ngIf="!(deviceService.isMobile$ | async)" src="./assets/images/curved-arrow-up.png" alt="curved arrow">
                 </div>
                 <img *ngIf="!(deviceService.isMobile$ | async)" style="right: 50px;" src="./assets/images/looping-arrow.png" alt="looping arrow">
@@ -37,6 +35,6 @@
         <div *ngIf="deviceService.isMobile$ | async" class="second-arrow">
             <img style="right: 50px;" src="./assets/images/small-arrow-down.png" alt="small arrow">
         </div>
-        <button (click)="scrollTo('contact')">Let's talk</button>
+        <button (click)="scrollTo('contact')">{{"why-me.button" | translate}}</button>
     </div>
 </section>

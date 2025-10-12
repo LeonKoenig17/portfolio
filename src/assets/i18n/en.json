@@ -1,0 +1,24 @@
+{
+  "header": {
+    "nav1": "Why me",
+    "nav2": "Skills",
+    "nav3": "Projects",
+    "nav4": "Contact"
+  },
+  "landing-page": {
+    "title" : "Frontend Developer",
+    "button": "Contact me"
+  },
+  "why-me": {
+    "heading": "Why me",
+    "p": "Turning problems into clarity drives my inventive approach on creating websites, achieving results that matter.",
+    "Iam": "I am",
+    "location": "located <br> in Passau",
+    "relocate": "open to <br> relocate",
+    "remote": "open to <br> work remote",
+    "button": "Let's talk"
+  },
+  "skills": {
+    "challenge": "I am always happy to learn new skills. Just tell me what you need."
+  }
+}

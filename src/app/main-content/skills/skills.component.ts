@@ -3,11 +3,12 @@ import { SingleSkillComponent } from './single-skill/single-skill.component';
 import { DeviceService } from '../../shared/services/device.service';
 import { AsyncPipe, NgIf } from '@angular/common';
 import { ScrollService } from '../../shared/services/scroll.service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [SingleSkillComponent, NgIf, AsyncPipe],
+  imports: [SingleSkillComponent, NgIf, AsyncPipe, TranslatePipe],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
@@ -31,6 +32,6 @@ export class SkillsComponent {
     {img: "./assets/images/scrum.png", text: "Scrum"},
     {img: "./assets/images/material-design.png", text: "Material\ndesign"},
     {img: "./assets/images/challenge-me.png", text: "Challenge\nme"},
-    {img: "", text: "I am always happy to learn new skills. Just tell me what you need."}
+    {img: "", text: "skills.challenge"}
   ]
 }
