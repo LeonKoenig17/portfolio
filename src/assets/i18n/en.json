@@ -20,5 +20,18 @@
   },
   "skills": {
     "challenge": "I am always happy to learn new skills. Just tell me what you need."
+  },
+  "projects": {
+    "join": "Plan smarter and get more done with a visual Kanban board designed for simplicity and control. Create tasks, move them through stages, and watch your projects come to life.",
+    "pokedex": "Explore the world of Pokémon with this interactive Pokédex powered by the PokéAPI. Search for your favorite Pokémon and discover detailed stats, abilities, types, height, and more.",
+    "los-virales": "Experience a post-apocalyptic zombie survival game powered by object-oriented JavaScript. Defeat the hordes of undead and see if you can beat the game."
+  },
+  "references": {
+    "heading": "Need a teamplayer?",
+    "p": "Here's what my colleagues say about me.",
+    "project": "Project",
+    "pokedex": "Leon had to develop, format and deliver content in collaboration with the team members. He is a reliable and friendly person.",
+    "los-virales": "He is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code.",
+    "join": "He is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague."
   }
 }

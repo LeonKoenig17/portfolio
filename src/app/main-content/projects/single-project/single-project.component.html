@@ -3,7 +3,7 @@
     <div class="text-div">
         <h2>{{data.title}}</h2>
         <p class="skills">{{data.skills}}</p>
-        <p class="description">{{data.text}}</p>
+        <p class="description">{{data.text | translate}}</p>
         <img *ngIf="deviceService.isMobile$ | async" src={{data.image}} alt="project-image">
         <div class="buttons">
             <a class="git-button" href={{data.gitLink}}>Github</a>

@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-comment',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './comment.component.html',
   styleUrl: './comment.component.scss'
 })

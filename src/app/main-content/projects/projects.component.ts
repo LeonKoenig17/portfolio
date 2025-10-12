@@ -15,7 +15,7 @@ export class ProjectsComponent {
       image: "./assets/images/join.png",
       title: "Join",
       skills: "TypeScript | HTML | CSS | Firebase",
-      text: "Plan smarter and get more done with a visual Kanban board designed for simplicity and control. Create tasks, move them through stages, and watch your projects come to life.",
+      text: "projects.join",
       gitLink: "https://github.com/LeonKoenig17/Join",
       liveLink: "https://join.leonk-thedev.com"
     },
@@ -23,7 +23,7 @@ export class ProjectsComponent {
       image: "./assets/images/pokedex.png",
       title: "Pokedex",
       skills: "JavaScript | HTML | CSS",
-      text: "Explore the world of Pokémon with this interactive Pokédex powered by the PokéAPI. Search for your favorite Pokémon and discover detailed stats, abilities, types, height, and more.",
+      text: "projects.pokedex",
       gitLink: "https://github.com/LeonKoenig17/Pokedex",
       liveLink: "http://pokedex.leonk-thedev.com"
     },
@@ -31,7 +31,7 @@ export class ProjectsComponent {
       image: "./assets/images/los-virales.png",
       title: "Los Virales",
       skills: "JavaScript | HTML | CSS",
-      text: "Experience a post-apocalyptic zombie survival game powered by object-oriented JavaScript. Defeat the hordes of undead and see if you can beat the game.",
+      text: "projects.los-virales",
       gitLink: "https://github.com/LeonKoenig17/Los-Virales",
       liveLink: "https://los-virales.leonk-thedev.com"
     }
