@@ -33,5 +33,16 @@
     "pokedex": "Leon had to develop, format and deliver content in collaboration with the team members. He is a reliable and friendly person.",
     "los-virales": "He is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code.",
     "join": "He is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague."
+  },
+  "contact": {
+    "heading": "Contact me",
+    "text": "Encourage people to contact you and describe what role you are interested in. Express interest in contributing to a new project.",
+    "name": "Your Name",
+    "name-req": "Your name is required",
+    "email": "Your Email",
+    "email-req": "Your email is required",
+    "message": "Your Message",
+    "message-req": "A message is required",
+    "agree": "I've read the <a href='/privacy-policy'>privacy policy</a> and agree to the processing of the data as outlined."
   }
 }

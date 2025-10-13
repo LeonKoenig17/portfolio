@@ -1,15 +1,15 @@
 <section>
     <div class="heading">
-        <h2 class="section-heading">Contact me</h2>
+        <h2 class="section-heading">{{"contact.heading" | translate}}</h2>
         <img *ngIf="!(deviceService.isMobile$ | async)" src="./assets/images/long-arrow-down.png" alt="arrow-down">
     </div>
     <div class="info">
-        <p>Encourage people to contact you and describe what role you are interested in. Express interest in contributing to a new project.</p>
+        <p>{{"contact.text" | translate}}</p>
         <div *ngIf="!(deviceService.isMobile$ | async)">
             <div class="contact-info">
                 <div>
                     <img src="./assets/images/email.png" alt="email">
-                    <p>E-mail: koenig.leon2000&#64;gmail.com</p>
+                    <p>Email: koenig.leon2000&#64;gmail.com</p>
                 </div>
                 <div>
                     <img src="./assets/images/phone.png" alt="phone">
@@ -26,7 +26,7 @@
             <div>
                 <div class="input-wrapper">
                     <input [(ngModel)]="contactData.name" type="text" id="name" name="name"
-                        [placeholder]="name.invalid && name.touched ? 'Your name is required' : 'Your Name'"
+                        [placeholder]="name.invalid && name.touched ? ('contact.name-req' | translate) : ('contact.name' | translate)"
                         [ngClass]="{'invalid': name.invalid && name.touched}"
                         #name="ngModel" minlength="4" required>
                     <img src="./assets/images/green-tick.png" alt="valid" *ngIf="name.valid && name.touched">
@@ -34,7 +34,7 @@
                 </div>
                 <div class="input-wrapper">
                     <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                        [placeholder]="email.invalid && email.touched ? 'Your email is required' : 'Your Email'"
+                        [placeholder]="email.invalid && email.touched ? ('contact.email-req' | translate) : ('contact.email' | translate)"
                         [ngClass]="{'invalid': email.invalid && email.touched}"
                         #email="ngModel" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                     <img src="./assets/images/green-tick.png" alt="valid" *ngIf="email.valid && email.touched">
@@ -43,7 +43,7 @@
             </div>
             <div class="textarea-wrapper">
                 <textarea [(ngModel)]="contactData.message" id="message" name="message" 
-                    [placeholder]="message.invalid && message.touched ? 'A message is required' : 'Your Message'" 
+                    [placeholder]="message.invalid && message.touched ? ('contact.message-req' | translate) : ('contact.message' | translate)" 
                     [ngClass]="{'invalid': message.invalid && message.touched}"
                     #message="ngModel" required></textarea>
                 <img src="./assets/images/green-tick.png" alt="valid" *ngIf="message.valid && message.touched">
@@ -56,7 +56,7 @@
                     <path [attr.d]="currentPath" fill="#E15544"/>
                 </svg>
             </div>
-            <p>I've read the <a href="">privacy policy</a> and agree to the processing of the data as outlined.</p>
+            <p [innerHTML]="'contact.agree' | translate"></p>
         </div>
         <div class="send">
             <input [ngClass]="{'agreed': currentPath == checkedPath && name.valid && email.valid && message.valid}" 

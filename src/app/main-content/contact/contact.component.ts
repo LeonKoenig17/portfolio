@@ -1,14 +1,15 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, inject, NgModule } from '@angular/core';
 import { ScrollService } from '../../shared/services/scroll.service';
 import { FormsModule, NgForm } from '@angular/forms';
-import { AsyncPipe, NgClass, NgIf } from '@angular/common';
+import { AsyncPipe, NgClass, NgIf, NgStyle } from '@angular/common';
 import { DeviceService } from '../../shared/services/device.service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, NgClass, NgIf, AsyncPipe],
+  imports: [FormsModule, NgClass, NgIf, AsyncPipe, TranslatePipe ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
