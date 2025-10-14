@@ -19,7 +19,8 @@
     "button": "Let's talk"
   },
   "skills": {
-    "challenge": "I am always happy to learn new skills. Just tell me what you need."
+    "challenge": "I am always happy to learn new skills. Just tell me what you need.",
+    "button": "Let's talk"
   },
   "projects": {
     "join": "Plan smarter and get more done with a visual Kanban board designed for simplicity and control. Create tasks, move them through stages, and watch your projects come to life.",
@@ -32,11 +33,11 @@
     "project": "Project",
     "pokedex": "Leon had to develop, format and deliver content in collaboration with the team members. He is a reliable and friendly person.",
     "los-virales": "He is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code.",
-    "join": "He is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague."
+    "join": "He is a reliable person. Work in a structured way and write a clear code. I recommend him as a colleague."
   },
   "contact": {
     "heading": "Contact me",
-    "text": "Encourage people to contact you and describe what role you are interested in. Express interest in contributing to a new project.",
+    "text": "Feel free to get in contact with me if you are looking for a skilled frontend developer. I am happy to contribute to any projects that need a caring hand.",
     "name": "Your Name",
     "name-req": "Your name is required",
     "email": "Your Email",
@@ -44,7 +45,8 @@
     "message": "Your Message",
     "message-req": "A message is required",
     "agree": "I've read the <a class='agree-highlight' href='/privacy-policy'>privacy policy</a> and agree to the processing of the data as outlined.",
-    "button": "Send"
+    "button": "Send",
+    "feedback": "Your message has been sent."
   },
   "footer": {
     "logo": "Frontend Developer",

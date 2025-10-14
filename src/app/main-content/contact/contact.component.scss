@@ -19,12 +19,16 @@ section {
     }
     .send {
         @include dFlex($jc: flex-end);
+        span {
+            color: $secondary-font-color;
+        }
         >input {
             color: #827B7B;
             border: 1px solid #827B7B;
             padding: 20px;
+            margin-left: 20px;
             background: none;
-            width: 100px;
+            width: 120px;
         }
     }
 }
@@ -231,10 +235,16 @@ input, textarea {
 
     .send {
         justify-content: center !important;
+        flex-direction: column;
         margin-top: 20px;
+        span {
+            font-size: 12px;
+        }
         input {
             width: 80px !important;
             padding: 10px !important;
+            margin-left: 0 !important;
+            margin-top: 10px;
         }
     }
 

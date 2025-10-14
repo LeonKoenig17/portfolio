@@ -16,27 +16,28 @@
         "location": "ansässig <br> in Passau",
         "relocate": "bereit zum <br> Umzug",
         "remote": "offen für <br> Remote-Arbeit",
-        "button": "Lass uns sprechen"
+        "button": "Lass uns reden"
     },
     "skills": {
-        "challenge": "Ich freue mich immer, neue Fähigkeiten zu erlernen. Sag mir einfach, was du brauchst."
+        "challenge": "Ich freue mich immer, neue Fähigkeiten zu erlernen. Sag mir einfach, was du brauchst.",
+        "button": "Lass uns reden"
     },
     "projects": {
         "join": "Plane intelligenter und erledige mehr mit einem visuellen Kanban-Board, das für Einfachheit und Kontrolle entwickelt wurde. Erstelle Aufgaben, verschiebe sie durch Phasen und sieh zu, wie deine Projekte zum Leben erwachen.",
-        "pokedex": "Erkunde die Welt der Pokémon mit diesem interaktiven Pokédex, der von der PokéAPI angetrieben wird. Suche dein Lieblings-Pokémon und entdecke detaillierte Statistiken, Fähigkeiten, Typen, Größe und mehr.",
-        "los-virales": "Erlebe ein postapokalyptisches Zombie-Überlebensspiel, das mit objektorientiertem JavaScript entwickelt wurde. Besiege die Horden der Untoten und finde heraus, ob du das Spiel gewinnen kannst."
+        "pokedex": "Erkunde die Welt der Pokémon mit diesem interaktiven Pokédex, der mit Hilfe der PokéAPI erstellt wurde. Suche dein Lieblings-Pokémon und finde detaillierte Statistiken, Fähigkeiten, Typen, Größe und mehr.",
+        "los-virales": "Erlebe ein postapokalyptisches Zombie-Überlebensspiel, das mit objektorientiertem JavaScript entwickelt wurde. Besiege die Horden der Untoten und schau, ob du das Spiel gewinnen kannst."
     },
     "references": {
         "heading": "Du suchst einen Teamplayer?",
         "p": "Das sagen meine Kollegen über mich.",
         "project": "Projekt",
-        "pokedex": "Leon musste Inhalte entwickeln, formatieren und in Zusammenarbeit mit den Teammitgliedern liefern. Er ist eine zuverlässige und freundliche Person.",
-        "los-virales": "Er ist ein vertrauenswürdiger Teamplayer und kann mit dem Stress von Deadlines umgehen. Strukturierte Arbeitsweise und sauberer Code.",
-        "join": "Er ist eine zuverlässige und freundliche Person. Arbeitet strukturiert und schreibt klaren Code. Ich empfehle ihn als Kollegen."
+        "pokedex": "Leon musste Inhalte entwickeln, formatieren und in Zusammenarbeit mit den Teammitgliedern liefern. Er ist zuverlässig und freundlich.",
+        "los-virales": "Er ist ein vertrauenswürdiger Teamplayer und kann gut mit Stress umgehen. Strukturierte Arbeitsweise und sauberer Code.",
+        "join": "Er ist ein zuverlässiger Kollege. Arbeitet strukturiert und schreibt klaren Code. Ich empfehle ihn als Kollegen."
     },
     "contact": {
         "heading": "Kontaktiere mich",
-        "text": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, für welche Rolle du dich interessierst. Zeige Interesse daran, zu einem neuen Projekt beizutragen.",
+        "text": "Zögern Sie nicht, mich zu kontaktieren, wenn Sie einen erfahrenen Frontend-Entwickler suchen. Ich freue mich darauf, an Projekten mitzuwirken, die ruhige Hände benötigen.",
         "name": "Dein Name",
         "name-req": "Dein Name ist erforderlich",
         "email": "Deine E-Mail",
@@ -44,7 +45,8 @@
         "message": "Deine Nachricht",
         "message-req": "Eine Nachricht ist erforderlich",
         "agree": "Ich habe die <a class='agree-highlight' href='/privacy-policy'>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung der darin beschriebenen Daten zu.",
-        "button": "Senden"
+        "button": "Senden",
+        "feedback": "Deine Nachricht wurde versendet."
     },
     "footer": {
         "logo": "Frontend-Entwickler",
@@ -56,7 +58,7 @@
         "imprint": "Impressum",
         "exploring": "Exploring the board",
         "acceptance": {
-            "heading": "Annahme der Bedingungen",
+            "heading": "Zustimmung der Bedingungen",
             "p": "Durch den Zugriff auf und die Nutzung von <span class='imprint-span'>Portfolio</span> (Produkt) erkennst du die folgenden Bedingungen sowie alle Richtlinien, Leitfäden oder Änderungen an, die dir von Zeit zu Zeit präsentiert werden können. Wir, die genannten Studierenden, können die Bedingungen von Zeit zu Zeit ohne vorherige Ankündigung aktualisieren oder ändern."
         },
         "scope": {

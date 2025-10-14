@@ -10,6 +10,6 @@
     <div *ngIf="deviceService.isMobile$ | async" class="arrow-container">
         <img src="./assets/images/skills-arrow.png" alt="">
         <p>{{"skills.challenge" | translate}}</p>
-        <button (click)="scrollTo('contact')">Let's talk</button>
+        <button (click)="scrollTo('contact')">{{"skills.button" | translate}}</button>
     </div>
 </section>

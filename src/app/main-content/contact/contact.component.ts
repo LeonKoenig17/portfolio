@@ -49,12 +49,15 @@ export class ContactComponent {
     },
   };
 
+  messageSent = false;
+
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            this.messageSent = true;
           },
           error: (error) => {
             console.error(error);

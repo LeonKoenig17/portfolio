@@ -8,10 +8,10 @@
             <a (click)="scrollTo('contact')">{{"header.nav4" | translate}}</a>
         </nav>
         <div *ngIf="!(deviceService.isMobile$ | async)" class="lang-buttons">
-                <button (click)="translateText('de')">DE</button>
-                <span>|</span>
-                <button (click)="translateText('en')">EN</button>
-            </div>
+            <button (click)="translateText('de')">DE</button>
+            <span>|</span>
+            <button (click)="translateText('en')">EN</button>
+        </div>
         <div *ngIf="deviceService.isMobile$ | async"><img src="./assets/images/burger-menu.png" (click)="openMenu()" alt="context-menu"></div>
     </div>
     <div *ngIf="(deviceService.isMobile$ | async) && showMenu" class="context-menu">
@@ -25,6 +25,7 @@
             <a (click)="scrollTo('contact')">Contact</a>
             <div class="lang-buttons">
                 <button (click)="translateText('de')">DE</button>
+                <span>|</span>
                 <button (click)="translateText('en')">EN</button>
             </div>
         </nav>

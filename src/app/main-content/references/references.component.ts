@@ -16,12 +16,12 @@ export class ReferencesComponent {
 
   comments = [
     {
-      name: "Yannick Marshall",
+      name: "Jannik Marsall",
       project: "Pokedex",
       text: "references.pokedex"
     },
     {
-      name: "Dennis Arduc",
+      name: "Dennis Arcud",
       project: "Los Virales",
       text: "references.los-virales"
     },
