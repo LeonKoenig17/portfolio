@@ -43,6 +43,175 @@
     "email-req": "Your email is required",
     "message": "Your Message",
     "message-req": "A message is required",
-    "agree": "I've read the <a href='/privacy-policy'>privacy policy</a> and agree to the processing of the data as outlined."
+    "agree": "I've read the <a class='agree-highlight' href='/privacy-policy'>privacy policy</a> and agree to the processing of the data as outlined.",
+    "button": "Send"
+  },
+  "footer": {
+    "logo": "Frontend Developer",
+    "legal-notice": "Legal notice",
+    "privacy-policy": "Privacy policy"
+  },
+  "imprint": {
+    "heading": "Legal Notice",
+    "imprint": "Imprint",
+    "exploring": "Exploring the board",
+    "acceptance": {
+      "heading": "Acceptance of terms",
+      "p": "By accessing and using <span class='imprint-span'>Portfolio</span> (Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments thereto that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice."
+    },
+    "scope": {
+      "heading": "Scope and ownership of the product",
+      "p1": "<span class='imprint-span'>Portfolio</span> has been developed as part of a student group project in a web development bootcamp at the <span class='imprint-span'>Developer Akademie GmbH</span>. It has an educational purpose and is not intended for extensive personal & business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product.",
+      "p2": "The design of <span class='imprint-span'>Portfolio</span> is owned by the <span class='imprint-span'>Developer Akademie GmbH</span>. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited."
+    },
+    "proprietary": {
+      "heading": "Proprietary rights",
+      "p": "Aside from the design owned by <span class='imprint-span'>Developer Akademie GmbH</span>, we, the listed students, retain all proprietary rights in <span class='imprint-span'>Portfolio</span>, including any associated copyrighted material, trademarks, and other proprietary information."
+    },
+    "use": {
+      "heading": "Use of the product",
+      "p": "<span class='imprint-span'>Portfolio</span> is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of <span class='imprint-span'>Portfolio</span> for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of <span class='imprint-span'>Portfolio</span>."
+    },
+    "disclaimer": {
+      "heading": "Disclaimer of warranties and limitation of liability",
+      "p": "<span class='imprint-span'>Portfolio</span> is provided &#34;as is&#x22; without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the Developer Akademie, be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of <span>Portfolio</span>."
+    },
+    "indemnity": {
+      "heading": "Indemnity",
+      "p1": "You agree to indemnify, defend and hold harmless us, the listed students, the Developer Akademie, and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of <span class='imprint-span'>Portfolio</span> and/or your breach of this Legal Notice.",
+      "p2": "For any questions or notices, please contact us at koenig.leon2000&#64;gmail.com.",
+      "p3": "Date: September 10, 2025"
+    }
+  },
+  "privacy": {
+    "h1": "Privacy Policy",
+    "section1": {
+      "h2": "1. Data Protection at a Glance",
+      "general_info": {
+        "h3": "General Information",
+        "p1": "The following notes provide a simple overview of what happens with your personal data when you visit this website. Personal data is any data that can be used to identify you personally. For detailed information on data protection, please refer to our privacy policy listed below this text."
+      },
+      "data_collection": {
+        "h3": "Data Collection on This Website",
+        "responsible": {
+          "h4": "Who is responsible for data collection on this website?",
+          "p1": "Data processing on this website is carried out by the website operator. You can find their contact details in the section 'Notice of Responsible Party' in this privacy policy."
+        },
+        "how": {
+          "h4": "How do we collect your data?",
+          "p1": "Your data is collected in part when you provide it to us. This can include, for example, data entered into a contact form.",
+          "p2": "Other data is collected automatically or with your consent when visiting the website through our IT systems. This primarily includes technical data (e.g., web browser, operating system, or time of page visit). The collection of this data happens automatically as soon as you access this website."
+        },
+        "purpose": {
+          "h4": "For what purposes do we use your data?",
+          "p1": "Some data is collected to ensure the website is provided without errors. Other data can be used to analyze your user behavior. If contracts can be concluded or initiated via the website, the transmitted data is also processed for contractual offers, orders, or other service requests."
+        },
+        "rights": {
+          "h4": "What rights do you have regarding your data?",
+          "p1": "You have the right at any time to obtain free information about the origin, recipients, and purpose of your stored personal data. You also have the right to request correction or deletion of this data. If you have given consent to data processing, you can revoke this consent at any time for the future. Furthermore, you have the right under certain circumstances to request the restriction of processing of your personal data. In addition, you have the right to lodge a complaint with the relevant supervisory authority.",
+          "p2": "For this and other questions regarding data protection, you can contact us at any time."
+        }
+      }
+    },
+    "section2": {
+      "h2": "2. Hosting",
+      "p1": "We host the contents of our website with the following provider:",
+      "allinkl": {
+        "h3": "All-Inkl",
+        "p1": "The provider is ALL-INKL.COM - Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf (hereinafter All-Inkl). Details can be found in the privacy policy of All-Inkl: https://all-inkl.com/datenschutzinformationen/",
+        "p2": "The use of All-Inkl is based on Art. 6 Para. 1 lit. f GDPR. We have a legitimate interest in a reliable presentation of our website. If consent has been obtained, processing is carried out exclusively on the basis of Art. 6 Para. 1 lit. a GDPR and § 25 Para. 1 TDDDG, as far as consent covers cookie storage or access to information on the user's device. Consent can be revoked at any time."
+      },
+      "processing_contract": {
+        "h4": "Data Processing Agreement",
+        "p1": "We have concluded a data processing agreement (DPA) for the use of the above service. This is a legally required agreement that ensures that personal data of our website visitors is processed only according to our instructions and in compliance with the GDPR."
+      }
+    },
+    "section3": {
+      "h2": "3. General Information and Mandatory Information",
+      "privacy": {
+        "h3": "Data Protection",
+        "p1": "The operators of this site take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with legal data protection regulations as well as this privacy policy.",
+        "p2": "When you use this website, various personal data is collected. Personal data is data that can identify you personally. This privacy policy explains which data we collect and what we use it for. It also explains how and for what purpose this happens.",
+        "p3": "Please note that data transmission over the internet (e.g., via email) can have security vulnerabilities. Complete protection of data against access by third parties is not possible."
+      },
+      "responsible_party": {
+        "h3": "Notice of Responsible Party",
+        "p1": "The responsible party for data processing on this website is:",
+        "p2": "Leon König\nLöwengrube 3\n94032 Passau",
+        "p3": "Phone: [Phone number of the responsible party]\nEmail: koenig.leon2000@gmail.com",
+        "p4": "The responsible party is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data (e.g., names, email addresses, etc.)."
+      },
+      "storage_duration": {
+        "h3": "Storage Duration",
+        "p1": "Unless a more specific storage period is mentioned in this privacy policy, your personal data remains with us until the purpose of data processing ceases. If you make a legitimate request for deletion or revoke consent for data processing, your data will be deleted unless we have other legally permissible reasons for storing your personal data (e.g., tax or commercial retention periods); in the latter case, deletion occurs after these reasons no longer apply."
+      },
+      "legal_basis": {
+        "h3": "General Information on the Legal Basis for Data Processing on This Website",
+        "p1": "If you have consented to data processing, we process your personal data based on Art. 6 Para. 1 lit. a GDPR or Art. 9 Para. 2 lit. a GDPR, if special categories of data under Art. 9 Para. 1 GDPR are processed. In the case of explicit consent to the transfer of personal data to third countries, data processing is also based on Art. 49 Para. 1 lit. a GDPR. If you have consented to the storage of cookies or access to information on your device (e.g., via device fingerprinting), processing is additionally based on § 25 Para. 1 TDDDG. Consent can be revoked at any time. If your data is necessary for contract performance or pre-contractual measures, we process your data on the basis of Art. 6 Para. 1 lit. b GDPR. Furthermore, if processing is necessary to fulfill a legal obligation, we do so based on Art. 6 Para. 1 lit. c GDPR. Processing may also be based on our legitimate interest according to Art. 6 Para. 1 lit. f GDPR. The specific legal basis applicable in each case is explained in the subsequent sections of this privacy policy."
+      },
+      "recipients": {
+        "h3": "Recipients of Personal Data",
+        "p1": "In the course of our business activities, we cooperate with various external parties. Personal data is shared with these external parties only when necessary for contract performance, if we are legally required (e.g., with tax authorities), if we have a legitimate interest in sharing under Art. 6 Para. 1 lit. f GDPR, or if another legal basis permits it. When using processors, personal data of our customers is shared only under a valid data processing agreement. In cases of joint processing, a joint processing agreement is concluded."
+      },
+      "withdrawal_consent": {
+        "h3": "Withdrawal of Your Consent to Data Processing",
+        "p1": "Many data processing operations are only possible with your explicit consent. You can withdraw any given consent at any time. The lawfulness of data processing carried out prior to withdrawal remains unaffected."
+      },
+      "objection_right": {
+        "h3": "Right to Object in Certain Cases and Against Direct Marketing (Art. 21 GDPR)",
+        "p1": "IF DATA PROCESSING IS BASED ON ART. 6 PARA. 1 LIT. E OR F GDPR, YOU HAVE THE RIGHT AT ANY TIME TO OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA FOR REASONS ARISING FROM YOUR PARTICULAR SITUATION; THIS ALSO APPLIES TO PROFILING BASED ON THESE PROVISIONS. THE RELEVANT LEGAL BASIS FOR PROCESSING IS DETAILED IN THIS PRIVACY POLICY. IF YOU OBJECT, WE WILL NO LONGER PROCESS YOUR PERSONAL DATA UNLESS WE CAN DEMONSTRATE COMPELLING LEGITIMATE GROUNDS THAT OVERRIDE YOUR INTERESTS, RIGHTS, AND FREEDOMS OR IF PROCESSING SERVES THE ASSERTION, EXERCISE, OR DEFENSE OF LEGAL CLAIMS (OBJECTION UNDER ART. 21 PARA. 1 GDPR).",
+        "p2": "IF YOUR PERSONAL DATA IS USED FOR DIRECT MARKETING, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME TO THE PROCESSING OF YOUR DATA FOR SUCH PURPOSES; THIS ALSO APPLIES TO PROFILING IN CONNECTION WITH SUCH DIRECT MARKETING. IF YOU OBJECT, YOUR PERSONAL DATA WILL NO LONGER BE USED FOR DIRECT MARKETING (OBJECTION UNDER ART. 21 PARA. 2 GDPR)."
+      },
+      "complaint": {
+        "h3": "Right to Lodge a Complaint with the Competent Supervisory Authority",
+        "p1": "In case of violations of the GDPR, data subjects have the right to lodge a complaint with a supervisory authority, particularly in the member state of their habitual residence, place of work, or the location of the alleged violation. This does not affect other administrative or judicial remedies."
+      },
+      "data_portability": {
+        "h3": "Right to Data Portability",
+        "p1": "You have the right to receive data that we process automatically on the basis of your consent or to fulfill a contract in a common, machine-readable format. If you request direct transmission to another controller, this will only occur if technically feasible."
+      },
+      "access_correction_deletion": {
+        "h3": "Access, Correction, and Deletion",
+        "p1": "You have the right at any time, under applicable law, to obtain free information about your stored personal data, its origin and recipients, and the purpose of processing, as well as the right to correct or delete this data. You can also contact us at any time for further questions about personal data."
+      },
+      "restriction": {
+        "h3": "Right to Restriction of Processing",
+        "p1": "You have the right to request restriction of processing of your personal data. You can contact us at any time to do so. The right to restrict processing exists in the following cases:",
+        "ul": {
+          "li1": "If you contest the accuracy of your personal data stored with us, we usually need time to verify it. During the verification period, you have the right to request restriction of processing.",
+          "li2": "If processing of your personal data was/is unlawful, you can request restriction of processing instead of deletion.",
+          "li3": "If we no longer need your personal data, but you need it to assert, exercise, or defend legal claims, you have the right to request restriction of processing instead of deletion.",
+          "li4": "If you have objected under Art. 21 Para. 1 GDPR, a balancing of interests must be carried out. As long as it is unclear whose interests prevail, you have the right to request restriction of processing."
+        },
+        "p2": "If you have restricted the processing of your personal data, such data may only be processed with your consent or to assert, exercise, or defend legal claims, protect the rights of another natural or legal person, or for reasons of important public interest of the EU or a member state."
+      },
+      "encryption": {
+        "h3": "SSL/TLS Encryption",
+        "p1": "This site uses SSL/TLS encryption for security reasons and to protect the transmission of confidential content, such as orders or inquiries you send to us as site operators. A secure connection can be recognized by the address line changing from 'http://' to 'https://' and the padlock icon in your browser.",
+        "p2": "When SSL/TLS encryption is active, data you transmit to us cannot be read by third parties."
+      },
+      "advertising_emails": {
+        "h3": "Objection to Advertising Emails",
+        "p1": "The use of contact details published under the legal notice for sending unsolicited advertising and informational materials is hereby objected to. The site operators expressly reserve the right to take legal action in case of unsolicited sending of advertising information, e.g., via spam emails."
+      }
+    },
+    "section4": {
+      "h2": "4. Data Collection on This Website",
+      "contact_form": {
+        "h3": "Contact Form",
+        "p1": "If you send inquiries via the contact form, your data from the inquiry form, including the contact data provided, will be stored for processing the inquiry and in case of follow-up questions. We do not share this data without your consent.",
+        "p2": "Processing of this data is based on Art. 6 Para. 1 lit. b GDPR if your request is related to contract fulfillment or pre-contractual measures. In all other cases, processing is based on our legitimate interest in efficiently handling inquiries directed to us (Art. 6 Para. 1 lit. f GDPR) or your consent (Art. 6 Para. 1 lit. a GDPR) if obtained; consent can be revoked at any time.",
+        "p3": "The data you enter in the contact form remains with us until you request deletion, revoke consent, or the purpose of storage ceases (e.g., after completing your inquiry). Mandatory legal provisions, especially retention periods, remain unaffected."
+      },
+      "email_phone_fax": {
+        "h3": "Inquiry via Email, Phone, or Fax",
+        "p1": "If you contact us via email, phone, or fax, your inquiry, including any personal data derived from it (name, inquiry), will be stored and processed for the purpose of handling your request. We do not share this data without your consent.",
+        "p2": "Processing of this data is based on Art. 6 Para. 1 lit. b GDPR if your request is related to contract fulfillment or pre-contractual measures. In all other cases, processing is based on our legitimate interest in efficiently handling inquiries directed to us (Art. 6 Para. 1 lit. f GDPR) or your consent (Art. 6 Para. 1 lit. a GDPR) if obtained; consent can be revoked at any time.",
+        "p3": "The data you send us via contact inquiries remains with us until you request deletion, revoke consent, or the purpose of storage ceases (e.g., after completing your request). Mandatory legal provisions, especially retention periods, remain unaffected."
+      },
+      "source": {
+        "p1": "Source: https://www.e-recht24.de"
+      }
+    }
   }
 }

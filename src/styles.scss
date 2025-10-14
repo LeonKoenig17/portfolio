@@ -60,3 +60,13 @@ p, span, h1, h2, h3 {
     cursor: default;
 }
 
+.agree-highlight {
+    color: #E15544;
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+.imprint-span {
+    color: $secondary-font-color;
+}

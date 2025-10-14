@@ -146,13 +146,6 @@ input, textarea {
     }
     p {
         margin: 0;
-        a {
-            color: $secondary-font-color;
-            &:hover {
-                font-weight: bold;
-                cursor: pointer;
-            }
-        }
     }
 }
 
@@ -163,7 +156,6 @@ input, textarea {
     transition: color 0.3s ease !important;
     &:hover {
         color: $primary-font-color !important;
-        cursor: pointer !important;
     }
 }
 

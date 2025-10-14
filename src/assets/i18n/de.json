@@ -8,6 +8,210 @@
     "landing-page": {
         "title" : "Frontend-Entwickler",
         "button": "Kontaktiere mich"
+    },
+        "why-me": {
+        "heading": "Warum ich",
+        "p": "Probleme in Klarheit zu verwandeln treibt meinen erfinderischen Ansatz bei der Erstellung von Websites an, um Ergebnisse zu erzielen, die wirklich zählen.",
+        "Iam": "Ich bin",
+        "location": "ansässig <br> in Passau",
+        "relocate": "bereit zum <br> Umzug",
+        "remote": "offen für <br> Remote-Arbeit",
+        "button": "Lass uns sprechen"
+    },
+    "skills": {
+        "challenge": "Ich freue mich immer, neue Fähigkeiten zu erlernen. Sag mir einfach, was du brauchst."
+    },
+    "projects": {
+        "join": "Plane intelligenter und erledige mehr mit einem visuellen Kanban-Board, das für Einfachheit und Kontrolle entwickelt wurde. Erstelle Aufgaben, verschiebe sie durch Phasen und sieh zu, wie deine Projekte zum Leben erwachen.",
+        "pokedex": "Erkunde die Welt der Pokémon mit diesem interaktiven Pokédex, der von der PokéAPI angetrieben wird. Suche dein Lieblings-Pokémon und entdecke detaillierte Statistiken, Fähigkeiten, Typen, Größe und mehr.",
+        "los-virales": "Erlebe ein postapokalyptisches Zombie-Überlebensspiel, das mit objektorientiertem JavaScript entwickelt wurde. Besiege die Horden der Untoten und finde heraus, ob du das Spiel gewinnen kannst."
+    },
+    "references": {
+        "heading": "Du suchst einen Teamplayer?",
+        "p": "Das sagen meine Kollegen über mich.",
+        "project": "Projekt",
+        "pokedex": "Leon musste Inhalte entwickeln, formatieren und in Zusammenarbeit mit den Teammitgliedern liefern. Er ist eine zuverlässige und freundliche Person.",
+        "los-virales": "Er ist ein vertrauenswürdiger Teamplayer und kann mit dem Stress von Deadlines umgehen. Strukturierte Arbeitsweise und sauberer Code.",
+        "join": "Er ist eine zuverlässige und freundliche Person. Arbeitet strukturiert und schreibt klaren Code. Ich empfehle ihn als Kollegen."
+    },
+    "contact": {
+        "heading": "Kontaktiere mich",
+        "text": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, für welche Rolle du dich interessierst. Zeige Interesse daran, zu einem neuen Projekt beizutragen.",
+        "name": "Dein Name",
+        "name-req": "Dein Name ist erforderlich",
+        "email": "Deine E-Mail",
+        "email-req": "Deine E-Mail ist erforderlich",
+        "message": "Deine Nachricht",
+        "message-req": "Eine Nachricht ist erforderlich",
+        "agree": "Ich habe die <a class='agree-highlight' href='/privacy-policy'>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung der darin beschriebenen Daten zu.",
+        "button": "Senden"
+    },
+    "footer": {
+        "logo": "Frontend-Entwickler",
+        "legal-notice": "Impressum",
+        "privacy-policy": "Datenschutzerklärung"
+    },
+    "imprint": {
+        "heading": "Rechtlicher Hinweis",
+        "imprint": "Impressum",
+        "exploring": "Exploring the board",
+        "acceptance": {
+            "heading": "Annahme der Bedingungen",
+            "p": "Durch den Zugriff auf und die Nutzung von <span class='imprint-span'>Portfolio</span> (Produkt) erkennst du die folgenden Bedingungen sowie alle Richtlinien, Leitfäden oder Änderungen an, die dir von Zeit zu Zeit präsentiert werden können. Wir, die genannten Studierenden, können die Bedingungen von Zeit zu Zeit ohne vorherige Ankündigung aktualisieren oder ändern."
+        },
+        "scope": {
+            "heading": "Umfang und Eigentum des Produkts",
+            "p1": "<span class='imprint-span'>Portfolio</span> wurde im Rahmen eines Gruppenprojekts im Webentwicklungs-Bootcamp der <span class='imprint-span'>Developer Akademie GmbH</span> entwickelt. Es dient ausschließlich Bildungszwecken und ist nicht für umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher können wir keine konstante Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder sonstige Qualitätsmerkmale dieses Produkts garantieren.",
+            "p2": "Das Design von <span class='imprint-span'>Portfolio</span> ist Eigentum der <span class='imprint-span'>Developer Akademie GmbH</span>. Eine unautorisierte Nutzung, Vervielfältigung, Veränderung, Verbreitung oder Reproduktion des Designs ist strengstens untersagt."
+        },
+        "proprietary": {
+            "heading": "Eigentumsrechte",
+            "p": "Abgesehen vom Design, das Eigentum der <span class='imprint-span'>Developer Akademie GmbH</span> ist, behalten wir, die genannten Studierenden, alle Eigentumsrechte an <span class='imprint-span'>Portfolio</span>, einschließlich aller urheberrechtlich geschützten Materialien, Marken und anderer geschützter Informationen."
+        },
+        "use": {
+            "heading": "Verwendung des Produkts",
+            "p": "<span class='imprint-span'>Portfolio</span> darf ausschließlich für rechtmäßige Zwecke und in Übereinstimmung mit allen geltenden Gesetzen und Vorschriften verwendet werden. Jegliche Nutzung von <span class='imprint-span'>Portfolio</span> für illegale Aktivitäten oder zum Belästigen, Schädigen, Bedrohen oder Einschüchtern anderer Personen ist strengstens untersagt. Du bist allein verantwortlich für deine Interaktionen mit anderen Nutzern von <span class='imprint-span'>Portfolio</span>."
+        },
+        "disclaimer": {
+            "heading": "Haftungsausschluss und Gewährleistung",
+            "p": "<span class='imprint-span'>Portfolio</span> wird &#34;wie besehen&#x22; bereitgestellt, ohne jegliche ausdrückliche oder stillschweigende Garantie, einschließlich, aber nicht beschränkt auf stillschweigende Garantien der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung von Rechten. In keinem Fall haften wir, die genannten Studierenden oder die Developer Akademie, für direkte, indirekte, zufällige, besondere, Folge- oder exemplarische Schäden, einschließlich, aber nicht beschränkt auf entgangene Gewinne, Goodwill, Nutzung, Daten oder andere immaterielle Verluste, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden, die sich aus oder im Zusammenhang mit der Nutzung oder Leistung von <span>Portfolio</span> ergeben."
+        },
+        "indemnity": {
+            "heading": "Freistellung",
+            "p1": "Du erklärst dich damit einverstanden, uns, die genannten Studierenden, die Developer Akademie sowie unsere verbundenen Unternehmen, Partner, leitenden Angestellten, Direktoren, Vertreter und Mitarbeiter von allen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten) freizustellen, zu verteidigen und schadlos zu halten, die sich aus deiner Nutzung von <span class='imprint-span'>Portfolio</span> und/oder deinem Verstoß gegen diesen rechtlichen Hinweis ergeben.",
+            "p2": "Für Fragen oder Mitteilungen kontaktiere uns bitte unter koenig.leon2000&#64;gmail.com.",
+            "p3": "Datum: 10. September 2025"
+        }
+    },
+    "privacy": {
+        "h1": "Datenschutzerklärung",
+        "section1": {
+            "h2": "1. Datenschutz auf einen Blick",
+            "general_info": {
+                "h3": "Allgemeine Hinweise",
+                "p1": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung."
+            },
+            "data_collection": {
+                "h3": "Datenerfassung auf dieser Website",
+                "responsible": {
+                    "h4": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
+                    "p1": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen."
+                },
+                "how": {
+                    "h4": "Wie erfassen wir Ihre Daten?",
+                    "p1": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.",
+                    "p2": "Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten."
+                },
+                "purpose": {
+                    "h4": "Wofür nutzen wir Ihre Daten?",
+                    "p1": "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden. Sofern über die Website Verträge geschlossen oder angebahnt werden können, werden die übermittelten Daten auch für Vertragsangebote, Bestellungen oder sonstige Auftragsanfragen verarbeitet."
+                },
+                "rights": {
+                    "h4": "Welche Rechte haben Sie bezüglich Ihrer Daten?",
+                    "p1": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.",
+                    "p2": "Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden."
+                }
+            }
+        },
+        "section2": {
+            "h2": "2. Hosting",
+            "p1": "Wir hosten die Inhalte unserer Website bei folgendem Anbieter:",
+            "allinkl": {
+                "h3": "All-Inkl",
+                "p1": "Anbieter ist die ALL-INKL.COM - Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf (nachfolgend All-Inkl). Details entnehmen Sie der Datenschutzerklärung von All-Inkl: https://all-inkl.com/datenschutzinformationen/",
+                "p2": "Die Verwendung von All-Inkl erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar."
+            },
+            "processing_contract": {
+                "h4": "Auftragsverarbeitung",
+                "p1": "Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet."
+            }
+        },
+        "section3": {
+            "h2": "3. Allgemeine Hinweise und Pflichtinformationen",
+            "privacy": {
+                "h3": "Datenschutz",
+                "p1": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
+                "p2": "Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.",
+                "p3": "Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich."
+            },
+            "responsible_party": {
+                "h3": "Hinweis zur verantwortlichen Stelle",
+                "p1": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:",
+                "p2": "Leon König\nLöwengrube 3\n94032 Passau",
+                "p3": "Telefon: [Telefonnummer der verantwortlichen Stelle]\nE-Mail: koenig.leon2000@gmail.com",
+                "p4": "Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet."
+            },
+            "storage_duration": {
+                "h3": "Speicherdauer",
+                "p1": "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe."
+            },
+            "legal_basis": {
+                "h3": "Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website",
+                "p1": "Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übertragung personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich auf Grundlage von § 25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese zur Erfüllung einer rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. Über die jeweils im Einzelfall einschlägigen Rechtsgrundlagen wird in den folgenden Absätzen dieser Datenschutzerklärung informiert."
+            },
+            "recipients": {
+                "h3": "Empfänger von personenbezogenen Daten",
+                "p1": "Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen. Dabei ist teilweise auch eine Übermittlung von personenbezogenen Daten an diese externen Stellen erforderlich. Wir geben personenbezogene Daten nur dann an externe Stellen weiter, wenn dies im Rahmen einer Vertragserfüllung erforderlich ist, wenn wir gesetzlich hierzu verpflichtet sind (z. B. Weitergabe von Daten an Steuerbehörden), wenn wir ein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO an der Weitergabe haben oder wenn eine sonstige Rechtsgrundlage die Datenweitergabe erlaubt. Beim Einsatz von Auftragsverarbeitern geben wir personenbezogene Daten unserer Kunden nur auf Grundlage eines gültigen Vertrags über Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung wird ein Vertrag über gemeinsame Verarbeitung geschlossen."
+            },
+            "withdrawal_consent": {
+                "h3": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
+                "p1": "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt."
+            },
+            "objection_right": {
+                "h3": "Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)",
+                "p1": "WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).",
+                "p2": "WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO)."
+            },
+            "complaint": {
+                "h3": "Beschwerderecht bei der zuständigen Aufsichtsbehörde",
+                "p1": "Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe."
+            },
+            "data_portability": {
+                "h3": "Recht auf Datenübertragbarkeit",
+                "p1": "Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist."
+            },
+            "access_correction_deletion": {
+                "h3": "Auskunft, Berichtigung und Löschung",
+                "p1": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden."
+            },
+            "restriction": {
+                "h3": "Recht auf Einschränkung der Verarbeitung",
+                "p1": "Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:",
+                "ul": {
+                    "li1": "Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.",
+                    "li2": "Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.",
+                    "li3": "Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.",
+                    "li4": "Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen."
+                },
+                "p2": "Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden."
+            },
+            "encryption": {
+                "h3": "SSL- bzw. TLS-Verschlüsselung",
+                "p1": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.",
+                "p2": "Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden."
+            },
+            "advertising_emails": {
+                "h3": "Widerspruch gegen Werbe-E-Mails",
+                "p1": "Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor."
+            }
+        },
+        "section4": {
+            "h2": "4. Datenerfassung auf dieser Website",
+            "contact_form": {
+                "h3": "Kontaktformular",
+                "p1": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
+                "p2": "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.",
+                "p3": "Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt."
+            },
+            "email_phone_fax": {
+                "h3": "Anfrage per E-Mail, Telefon oder Telefax",
+                "p1": "Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
+                "p2": "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.",
+                "p3": "Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt."
+            },
+            "source": {
+                "p1": "Quelle: https://www.e-recht24.de"
+            }
+        }
     }
-
 }
