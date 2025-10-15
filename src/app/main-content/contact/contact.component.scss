@@ -19,6 +19,7 @@ section {
     }
     .send {
         @include dFlex($jc: flex-end);
+        margin-top: 20px;
         span {
             color: $secondary-font-color;
         }

@@ -14,7 +14,7 @@ section {
             right: 60px;
             top: 20px;
             z-index: -100;
-            max-width: 500px;
+            max-height: 600px;
         }
     >div {
         @include dFlex($jc: flex-end, $ai: flex-start);
@@ -81,7 +81,8 @@ section {
             }
         }
         >img {
-            width: 100%;
+            max-width: 100%;
+            // max-height: unset;
             position: unset;
         }
     }
