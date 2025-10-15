@@ -2,17 +2,19 @@
 
 :host {
     @include dFlex();
-    padding-top: 50px;
+    // padding-top: 50px;
+    height: 100vh;
 }
 
 section {
     @include dFlex($jc: space-between);
-    @include contentLimit(600px);
-    position: relative;
+    @include contentLimit();
+    height: 100%;
+    // position: relative;
     >img {
             position: absolute;
             right: 60px;
-            top: 20px;
+            bottom: 0;
             z-index: -100;
             max-height: 600px;
         }
