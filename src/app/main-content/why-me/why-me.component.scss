@@ -65,7 +65,7 @@ section {
     }
 
     section {
-        width: calc(100vw - 40px);
+        width: calc(100% - 40px);
         padding: 0 20px;
         height: unset;
         #why-me-text {
@@ -78,7 +78,7 @@ section {
                 @include dFlex($jc: flex-end);
             }
             .first-arrow, .second-arrow {
-                width: 300px;
+                width: 280px;
             }
             .section-heading {
                 font-size: 32px;
@@ -104,10 +104,6 @@ section {
                 position: unset;
             }
         }
-    }
-
-    br {
-        display: none;
     }
 }
 

@@ -10,7 +10,7 @@
 
 section {
     @include dFlex();
-    @include contentLimit(90px, $padX: 140px);
+    @include contentLimit(90px);
     .main-div {
         @include dFlex($jc: space-between);
         width: 100%;
@@ -54,7 +54,6 @@ section * {
 }
 
 @media (max-width: $mobile-width) {
-    
     section {
         height: 70px;
         width: calc(100vw - 40px);

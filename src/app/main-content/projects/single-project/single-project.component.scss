@@ -59,6 +59,8 @@ section {
             width: 100%;
         }
         .text-div {
+            @include dFlex();
+            flex-direction: column;
             > * {
                 text-align: center;
             }
@@ -79,7 +81,7 @@ section {
 
     .buttons {
         @include dFlex();
-        gap: 20px;
+        // gap: 20px;
         a {
             padding: 12px 20px;
         }

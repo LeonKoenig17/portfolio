@@ -27,7 +27,7 @@ section {
     }
 
     section {
-        width: calc(100vw - 40px);
+        width: calc(100% - 40px);
         padding: 0 20px;
         .section-heading {
             font-size: 32px;
@@ -40,7 +40,7 @@ section {
             @include dFlex();
             >div {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(6, 1fr);
                 justify-content: center;
                 align-items: center;
                 row-gap: 0;
@@ -67,4 +67,10 @@ section {
         }
     }
 
+}
+
+@media (max-width: 560px) {
+    .skills-container >div {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
 }

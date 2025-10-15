@@ -33,6 +33,7 @@ export class HeaderComponent {
 
   translateText(lang: string) {
     this.translate.use(lang)
+    localStorage.setItem("lang", lang);
   }
 }
 

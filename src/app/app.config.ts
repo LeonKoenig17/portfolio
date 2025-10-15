@@ -13,7 +13,7 @@ export const appConfig: ApplicationConfig = {
     provideTranslateService({
       loader: provideTranslateHttpLoader({prefix:'./assets/i18n/', suffix:'.json'}),
       fallbackLang: 'en',
-      lang: 'en'
+      lang: localStorage.getItem('lang') || 'en'
     })
   ]
 };
