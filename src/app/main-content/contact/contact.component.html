@@ -28,7 +28,8 @@
                     <input [(ngModel)]="contactData.name" type="text" id="name" name="name"
                         [placeholder]="name.invalid && name.touched ? ('contact.name-req' | translate) : ('contact.name' | translate)"
                         [ngClass]="{'invalid': name.invalid && name.touched}"
-                        #name="ngModel" minlength="4" required>
+                        validateMinLetterLength="4"
+                        #name="ngModel" required pattern="^[A-Za-zÄÖÜäöü]+(?: [A-Za-zÄÖÜäöü]+)*$">
                     <img src="./assets/images/green-tick.png" alt="valid" *ngIf="name.valid && name.touched">
                     <img src="./assets/images/red-exMark.png" alt="invalid" *ngIf="name.invalid && name.touched">
                 </div>
@@ -36,7 +37,7 @@
                     <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
                         [placeholder]="email.invalid && email.touched ? ('contact.email-req' | translate) : ('contact.email' | translate)"
                         [ngClass]="{'invalid': email.invalid && email.touched}"
-                        #email="ngModel" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        #email="ngModel" required pattern="^(?!.*\.\.)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
                     <img src="./assets/images/green-tick.png" alt="valid" *ngIf="email.valid && email.touched">
                     <img src="./assets/images/red-exMark.png" alt="invalid" *ngIf="email.invalid && email.touched">
                 </div>
@@ -45,7 +46,7 @@
                 <textarea [(ngModel)]="contactData.message" id="message" name="message" 
                     [placeholder]="message.invalid && message.touched ? ('contact.message-req' | translate) : ('contact.message' | translate)" 
                     [ngClass]="{'invalid': message.invalid && message.touched}"
-                    #message="ngModel" required></textarea>
+                    #message="ngModel" required pattern="^\S+$"></textarea>
                 <img src="./assets/images/green-tick.png" alt="valid" *ngIf="message.valid && message.touched">
                 <img src="./assets/images/red-exMark.png" alt="invalid" *ngIf="message.invalid && message.touched">
             </div>
@@ -59,7 +60,14 @@
             <p [innerHTML]="'contact.agree' | translate"></p>
         </div>
         <div class="send">
-            <span *ngIf="messageSent">{{"contact.feedback" | translate}}</span>
+            <div class="feedback" *ngIf="showFeedback">
+                <div class="box">
+                    <div>
+                        <img src="./assets/images/close-context.png" (click)="closeFeedback()" alt=""> <!--add (click)=""-->
+                    </div>
+                    <span>{{"contact.feedback" | translate}}</span>
+                </div>
+            </div>
             <input [ngClass]="{'agreed': currentPath == checkedPath && name.valid && email.valid && message.valid}" 
                 [disabled]="currentPath == uncheckedPath"
                 type="submit" [value]="'contact.button' | translate">
