@@ -2,23 +2,19 @@ import { Component } from '@angular/core';
 import { SingleSkillComponent } from './single-skill/single-skill.component';
 import { DeviceService } from '../../shared/services/device.service';
 import { AsyncPipe, NgIf } from '@angular/common';
-import { ScrollService } from '../../shared/services/scroll.service';
 import { TranslatePipe } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [SingleSkillComponent, NgIf, AsyncPipe, TranslatePipe],
+  imports: [SingleSkillComponent, NgIf, AsyncPipe, TranslatePipe, RouterLink],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
 
-  constructor(private scrollService: ScrollService, public deviceService: DeviceService) {}
-
-  scrollTo(sectionId: string) {
-    this.scrollService.scrollTo(sectionId);
-  }
+  constructor(public deviceService: DeviceService) {}
 
   skills = [
     {img: "./assets/images/angular.png", text: "Angular"},

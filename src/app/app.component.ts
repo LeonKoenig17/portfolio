@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements AfterViewInit {
   title = 'portfolio';

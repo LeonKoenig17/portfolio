@@ -42,6 +42,9 @@ section {
         width: 50%;
         >svg {
             padding-right: 11px;
+            &:focus {
+                outline: none;
+            }
             &:hover {
                 cursor: pointer;
                 border: 1px solid $primary-font-color;

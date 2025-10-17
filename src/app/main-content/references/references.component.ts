@@ -16,19 +16,19 @@ export class ReferencesComponent {
 
   comments = [
     {
-      name: "Jannik Marsall",
-      project: "Pokedex",
-      text: "references.pokedex"
+      name: "Yannick Marsall",
+      project: "Kochwelt",
+      text: "references.ref1"
     },
     {
       name: "Dennis Arcud",
-      project: "Los Virales",
-      text: "references.los-virales"
+      project: "Join",
+      text: "references.ref2"
     },
     {
-      name: "Sophie Kenbock",
+      name: "Luca Ristmann",
       project: "Join",
-      text: "references.join"
+      text: "references.ref3"
     }
   ]
 }

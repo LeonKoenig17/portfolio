@@ -1,18 +1,18 @@
 import { Component, inject } from '@angular/core';
-import { ScrollService } from '../../services/scroll.service';
 import { CommonModule } from "@angular/common";
 import { DeviceService } from '../../services/device.service';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslatePipe],
+  imports: [CommonModule, TranslatePipe, RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  constructor(private scrollService: ScrollService, public deviceService: DeviceService) {}
+  constructor(public deviceService: DeviceService) {}
 
   showMenu = false;
 
@@ -22,11 +22,6 @@ export class HeaderComponent {
 
   closeMenu() {
     this.showMenu = false;
-  }
-
-  scrollTo(sectionId: string) {
-    this.scrollService.scrollTo(sectionId);
-    this.closeMenu();
   }
 
   private translate = inject(TranslateService);

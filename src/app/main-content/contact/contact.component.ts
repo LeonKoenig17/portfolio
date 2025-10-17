@@ -1,20 +1,20 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, NgModule } from '@angular/core';
-import { ScrollService } from '../../shared/services/scroll.service';
 import { FormsModule, NgForm } from '@angular/forms';
 import { AsyncPipe, NgClass, NgIf, NgStyle } from '@angular/common';
 import { DeviceService } from '../../shared/services/device.service';
 import { TranslatePipe } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, NgClass, NgIf, AsyncPipe, TranslatePipe ],
+  imports: [FormsModule, NgClass, NgIf, AsyncPipe, TranslatePipe, RouterLink],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  constructor(private scrollService: ScrollService, public deviceService: DeviceService) {}
+  constructor(public deviceService: DeviceService) {}
 
   http = inject(HttpClient);
   uncheckedPath = "M2.5 18C1.95 18 1.47917 17.8042 1.0875 17.4125C0.695833 17.0208 0.5 16.55 0.5 16V2C0.5 1.45 0.695833 0.979167 1.0875 0.5875C1.47917 0.195833 1.95 0 2.5 0H16.5C17.05 0 17.5208 0.195833 17.9125 0.5875C18.3042 0.979167 18.5 1.45 18.5 2V16C18.5 16.55 18.3042 17.0208 17.9125 17.4125C17.5208 17.8042 17.05 18 16.5 18H2.5ZM2.5 16H16.5V2H2.5V16Z";
@@ -48,10 +48,6 @@ export class ContactComponent {
   openFeedback() {
     this.showFeedback = true;
     document.body.style.overflow = 'hidden';
-  }
-  
-  scrollTo(sectionId: string) {
-    this.scrollService.scrollTo(sectionId);
   }
 
   togglePath() {

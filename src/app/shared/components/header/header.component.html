@@ -1,11 +1,11 @@
 <section>
     <div class="main-div">
-        <a href="" class="header-logo" (click)="scrollTo('landing-page')">&lt;LK&gt;</a>
+        <a [routerLink]="['/']" fragment="landing-page" class="header-logo">&lt;LK&gt;</a>
         <nav *ngIf="!(deviceService.isMobile$ | async)">
-            <a (click)="scrollTo('why-me')">{{"header.nav1" | translate}}</a>
-            <a (click)="scrollTo('skills')">{{"header.nav2" | translate}}</a>
-            <a (click)="scrollTo('projects')">{{"header.nav3" | translate}}</a>
-            <a (click)="scrollTo('contact')">{{"header.nav4" | translate}}</a>
+          <a [routerLink]="['/']" fragment="why-me">{{"header.nav1" | translate}}</a>
+          <a [routerLink]="['/']" fragment="skills">{{"header.nav2" | translate}}</a>
+          <a [routerLink]="['/']" fragment="projects">{{"header.nav3" | translate}}</a>
+          <a [routerLink]="['/']" fragment="contact">{{"header.nav4" | translate}}</a>
         </nav>
         <div *ngIf="!(deviceService.isMobile$ | async)" class="lang-buttons">
             <button (click)="translateText('de')">DE</button>
@@ -19,10 +19,10 @@
             <img src="./assets/images/close-context.png" (click)="closeMenu()" alt="">
         </div>
         <nav>
-            <a (click)="scrollTo('why-me')">{{"header.nav1" | translate}}</a>
-            <a (click)="scrollTo('skills')">{{"header.nav2" | translate}}</a>
-            <a (click)="scrollTo('projects')">{{"header.nav3" | translate}}</a>
-            <a (click)="scrollTo('contact')">{{"header.nav4" | translate}}</a>
+            <a [routerLink]="['/']" fragment="why-me">{{"header.nav1" | translate}}</a>
+            <a [routerLink]="['/']" fragment="skills">{{"header.nav2" | translate}}</a>
+            <a [routerLink]="['/']" fragment="projects">{{"header.nav3" | translate}}</a>
+            <a [routerLink]="['/']" fragment="contact">{{"header.nav4" | translate}}</a>
             <div class="lang-buttons">
                 <button (click)="translateText('de')">DE</button>
                 <span>|</span>

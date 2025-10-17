@@ -1,6 +1,6 @@
 <section>
     <div *ngIf="deviceService.isMobile$ | async" class="arrow">
-        <a href="/"><img src="./assets/images/back-arrow.png" alt=""></a>
+        <a [routerLink]="['/']" fragment=""><img src="./assets/images/back-arrow.png" alt=""></a>
     </div>
     <h1 [innerHTML]="'privacy.h1' | translate"></h1>
     <div class="text">
