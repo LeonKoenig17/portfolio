@@ -32,7 +32,7 @@
     "p": "Here's what my colleagues say about me.",
     "project": "Project",
     "ref1": "Leon is a pleasant colleague who learns quickly and brings good ideas to the project.",
-    "ref2": "He seems generally relaxed and yet completes his tasks quickly and precisely.",
+    "ref2": "He remains composed even when faced with complex tasks and consistently maintains a clear, focused mindset.",
     "ref3": "His code is easy to understand and well struktured which helps a lot when working in the team."
   },
   "contact": {
@@ -44,7 +44,11 @@
     "email-req": "Your email is required",
     "message": "Your Message",
     "message-req": "A message is required",
-    "agree": "I've read the <a class='agree-highlight' href='/privacy-policy'>privacy policy</a> and agree to the processing of the data as outlined.",
+    "agree": {
+      "text": "I've read the",
+      "link": "privacy policy",
+      "end": "and agree to the processing of the data as outlined."
+    },
     "button": "Send",
     "feedback": "Your message has been sent."
   },

@@ -19,10 +19,10 @@
             <img src="./assets/images/close-context.png" (click)="closeMenu()" alt="">
         </div>
         <nav>
-            <a [routerLink]="['/']" fragment="why-me">{{"header.nav1" | translate}}</a>
-            <a [routerLink]="['/']" fragment="skills">{{"header.nav2" | translate}}</a>
-            <a [routerLink]="['/']" fragment="projects">{{"header.nav3" | translate}}</a>
-            <a [routerLink]="['/']" fragment="contact">{{"header.nav4" | translate}}</a>
+            <a (click)="closeMenu()" [routerLink]="['/']" fragment="why-me">{{"header.nav1" | translate}}</a>
+            <a (click)="closeMenu()" [routerLink]="['/']" fragment="skills">{{"header.nav2" | translate}}</a>
+            <a (click)="closeMenu()" [routerLink]="['/']" fragment="projects">{{"header.nav3" | translate}}</a>
+            <a (click)="closeMenu()" [routerLink]="['/']" fragment="contact">{{"header.nav4" | translate}}</a>
             <div class="lang-buttons">
                 <button (click)="translateText('de')">DE</button>
                 <span>|</span>

@@ -290,4 +290,19 @@ input, textarea {
             }
         }
     }
+
+    .feedback .box {
+        padding: 30px;
+        margin: 20px;
+        >div {
+            width: 100%;
+            @include dFlex($jc: flex-end);
+            img {
+                cursor: pointer;
+            }
+        }
+        span {
+            font-size: 16px;
+        }
+    }
 }

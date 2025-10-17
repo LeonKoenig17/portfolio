@@ -57,7 +57,11 @@
                     <path [attr.d]="currentPath" fill="#E15544"/>
                 </svg>
             </div>
-            <p [innerHTML]="'contact.agree' | translate"></p>
+            <p>
+                {{ 'contact.agree.text' | translate }}
+                <a class="agree-highlight" routerLink="/privacy-policy" routerLinkActive="active">{{ 'contact.agree.link' | translate }}</a>
+                {{ 'contact.agree.end' | translate }}
+            </p>
         </div>
         <div class="send">
             <div class="feedback" *ngIf="showFeedback">
