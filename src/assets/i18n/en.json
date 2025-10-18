@@ -39,11 +39,23 @@
     "heading": "Contact me",
     "text": "Feel free to get in contact with me if you are looking for a skilled frontend developer. I am happy to contribute to any projects that need a caring hand.",
     "name": "Your Name",
-    "name-req": "Your name is required",
     "email": "Your Email",
-    "email-req": "Your email is required",
     "message": "Your Message",
-    "message-req": "A message is required",
+    "error": {
+      "name": {
+        "required": "Name required",
+        "pattern": "Only letters allowed",
+        "minlength": "At least 3 characters"
+      },
+      "email": {
+        "required": "Email address required",
+        "pattern": "Email address invalid"
+      },
+      "message": {
+        "required": "Message required",
+        "pattern": "First character cannot be empty"
+      }
+    },
     "agree": {
       "text": "I've read the",
       "link": "privacy policy",

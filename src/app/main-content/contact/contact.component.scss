@@ -164,9 +164,13 @@ input, textarea {
     }
 }
 
-.invalid::placeholder {
-    color: #F92103;
-    opacity: 100%;
+.error-message {
+    position: absolute;
+    bottom: -25px;
+    span {
+        font-size: 16px;
+        color: #F92103;
+    }
 }
 
 .feedback {
@@ -228,7 +232,7 @@ input, textarea {
         }
         >div {
             gap: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
             .input-wrapper {
                 padding-right: 0;
                 >img {
@@ -304,5 +308,17 @@ input, textarea {
         span {
             font-size: 16px;
         }
+    }
+
+    .error-message {
+        bottom: -18px;
+        span {
+            font-size: 12px;
+            color: #F92103;
+        }
+    }
+
+    .textarea-wrapper .error-message {
+        bottom: 10px;
     }
 }

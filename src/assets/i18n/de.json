@@ -39,11 +39,23 @@
         "heading": "Kontaktiere mich",
         "text": "Zögern Sie nicht, mich zu kontaktieren, wenn Sie einen erfahrenen Frontend-Entwickler suchen. Ich freue mich darauf, an Projekten mitzuwirken, die ruhige Hände benötigen.",
         "name": "Dein Name",
-        "name-req": "Dein Name ist erforderlich",
-        "email": "Deine E-Mail",
-        "email-req": "Deine E-Mail ist erforderlich",
+        "email": "Deine Email",
         "message": "Deine Nachricht",
-        "message-req": "Eine Nachricht ist erforderlich",
+        "error": {
+          "name": {
+            "required": "Name erforderlich",
+            "pattern": "Nur Buchstaben erlaubt",
+            "minlength": "min. 3 Buchstaben"
+        },
+        "email": {
+            "required": "Email-Adresse erforderlich",
+            "pattern": "Email-Adresse ungültig"
+        },
+        "message": {
+            "required": "Nachricht erforderlich",
+            "pattern": "Darf nicht mit [LEER] beginnen"
+        }
+    },
         "agree": {
             "text": "Ich habe die",
             "link": "Datenschutzerklärung",
