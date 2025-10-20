@@ -42,19 +42,20 @@
         "email": "Deine Email",
         "message": "Deine Nachricht",
         "error": {
-          "name": {
-            "required": "Name erforderlich",
-            "pattern": "Nur Buchstaben erlaubt",
-            "minlength": "min. 3 Buchstaben"
-        },
-        "email": {
-            "required": "Email-Adresse erforderlich",
-            "pattern": "Email-Adresse ungültig"
-        },
-        "message": {
-            "required": "Nachricht erforderlich",
-            "pattern": "Darf nicht mit [LEER] beginnen"
-        }
+            "name": {
+                "required": "Name erforderlich",
+                "pattern": "Nur Buchstaben erlaubt",
+                "minlength": "min. 3 Buchstaben"
+            },
+            "email": {
+                "required": "Email-Adresse erforderlich",
+                "pattern": "Email-Adresse ungültig"
+            },
+            "message": {
+                "required": "Nachricht erforderlich",
+                "pattern": "Darf nicht mit [LEER] beginnen"
+            },
+            "agreement": "Zustimmung erforderlich"
     },
         "agree": {
             "text": "Ich habe die",

@@ -54,7 +54,8 @@
       "message": {
         "required": "Message required",
         "pattern": "First character cannot be empty"
-      }
+      },
+      "agreement": "Agreement required"
     },
     "agree": {
       "text": "I've read the",

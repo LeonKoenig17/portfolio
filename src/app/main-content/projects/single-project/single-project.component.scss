@@ -3,9 +3,9 @@
 section {
     @include dFlex();
     gap: 60px;
-    img {
-        width: 50%;
+    >img {
         max-width: 650px;
+        width: 50vw;
     }
 }
 

@@ -16,7 +16,7 @@ section {
             position: absolute;
             right: 60px;
             z-index: -100;
-            max-height: 100%;
+            max-height: calc(100% - 60px);
         }
     >div {
         @include dFlex($jc: flex-end, $ai: flex-start);
@@ -78,6 +78,7 @@ section {
         padding-top: 80px;
         height: auto;
         >div {
+            justify-content: unset;
             padding-top: 20px;
             align-items: center;
             >p {

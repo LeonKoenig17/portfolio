@@ -133,6 +133,7 @@ input, textarea {
 
 .policy-agreement {
     @include dFlex($jc: flex-start);
+    position: relative;
     margin: 40px 0 0 0;
     .checkbox {
         margin-right: 20px;
@@ -161,6 +162,7 @@ input, textarea {
     transition: color 0.3s ease !important;
     &:hover {
         color: $primary-font-color !important;
+        cursor: pointer;
     }
 }
 
@@ -232,7 +234,7 @@ input, textarea {
         }
         >div {
             gap: 20px;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
             .input-wrapper {
                 padding-right: 0;
                 >img {
@@ -319,6 +321,6 @@ input, textarea {
     }
 
     .textarea-wrapper .error-message {
-        bottom: 10px;
+        bottom: 5px;
     }
 }
